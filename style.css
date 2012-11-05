@@ -1,0 +1,148 @@
+/*
+Theme Name: Tema SINCOMAVI WP
+Theme URI: http://www.sincomavi.com.br
+Description: Ononon onnon. criado por <a href="http://www.twobrasil.com">Sandro Ribas</a> em Jun/Jul de 2012. Requer WordPress 3.2 ou posterior.
+Version: 1.0
+Tags:
+Author: Sandro Ribas
+Author URI: http://www.twobrasil.com
+*/
+
+*{ margin:0 auto; padding:0;}
+body{width:100%; height:auto; background:#656565;}
+
+#container{ width:100%; height:100%; }
+#site{ width:875px; height:auto; background:#fff; padding-bottom:50px;}
+
+/*---TOPO-------------------------------------------------------------------------------------------------------------------------------------------*/
+#topo{ width:100%; height:167px; border-top: 8px solid #3b6e8f;}
+
+/*---LOGO-------------------------------------------------------------------------------------------------------------------------------------------*/
+#topo #logo-topo{ float:left;  height:100%; width:239px; display:block;}
+
+#topo #logo-topo img{ padding-left: 27px; padding-top:18px;}
+/*---NAV-------------------------------------------------------------------------------------------------------------------------------------------*/
+#topo #nav-topo{ float:left;  height:100%; width:636px; }
+#topo #nav-topo ul{ width: 100%; height:100%;}
+#topo #nav-topo li{ float: left; overflow: hidden; width: 19.876%; height:167px; text-align:center; border-left:1px solid #eee  }
+#topo #nav-topo li:first-child, li:last-child{ border-left:none;}
+#topo #nav-topo li a{ display:block; width:100%; height: 167px; margin:0 auto; padding-top:95px; color:#7f7f7f; text-decoration:none; font-family: 'Open Sans', sans-serif; font-weight:400; font-size:14px; border-top:13px solid #3b6e8f;}
+
+#topo #nav-topo li a #item1{ border-top:13px solid #3b6e8f; display:block}
+#topo #nav-topo li a #item2{ border-top:13px solid #a14b2b; display:block}
+#topo #nav-topo li a .item3{ border-top:13px solid #574b43; display:block}
+#topo #nav-topo li a .item4{ border-top:13px solid #cdaf2e; display:block}
+#topo #nav-topo li a .item5{ border-top:13px solid #637b1e; display:block}
+
+#topo #nav-topo li a:hover{ border-top:13px solid #09F;}
+
+
+/*---SLIDER-------------------------------------------------------------------------------------------------------------------------------------------*/
+#topo #slider-topo{ /*background: #FF6; float:left;  height:458px; width:100%; display:block; float:left;*/
+	position:relative;
+	width:875px;
+	height:458px;
+	
+	z-index:100;
+	display:block;
+	float:left;
+	overflow:hidden;
+}
+
+div.slide {
+	width:875px;
+	height:458px;
+	display:block;
+}
+
+.caption{/*width:100%; height:60px; background: #a14b2b; position:relative; top: 398px; z-index: 10;*/}
+
+.caption {
+	text-align:left;
+	z-index:500;
+	position:absolute;
+	top:378px;
+	left:0px;
+	height:80px;
+	width:100%;
+	padding:0px 0px 0 0px;
+	background:#a14b2b;
+	background:rgba(161,75,43,.8);
+	
+	color:#ff3300;
+	display:block;
+	overflow:hidden;
+	
+}
+
+
+.caption a{ text-decoration:none; outline:none; border: none; display:block; width:auto; height:80px;}
+.caption a p{ color: #fff; margin: 0px; text-decoration:none; font-family: 'Open Sans', sans-serif; font-weight:400; font-size:15px; margin: 30px 20px;}
+
+.caption a *:hover{color: #060  !important;}
+
+
+.flex-caption{}
+
+/*---CONTEUDO-------------------------------------------------------------------------------------------------------------------------------------------------*/
+#conteudo{ clear:both; /*float:left; */display:block; height:auto; width:875px; background:#FFF;}
+
+
+/*---CONTEUDO-HOME-------------------------------------------------------------------------------------------------------------------------------------------*/
+#conteudo #destaques-home{ clear:both; width: 100%; height: 350px; background:#969; float:left; display:block}
+
+#conteudo #conteudo-home{ height:auto; width:100%; background:#633; display:block; float: left; }
+
+#conteudo #conteudo-home #col1-home{width:347px; height:440px; background:#960; display:block; float: left;}
+
+#conteudo #conteudo-home #col2-home{ width:347px; height:440px; background:#990; display:block; float: left;}
+
+#conteudo #conteudo-home #col3-home{ width:181px; height:440px; background:#9C0; display:block; float: left;}
+
+#titulo-busca{ width:875px; height: 70px; display:block; float:left; background:#FFF; }
+#tituloh{ width: 615px; height:70px; float:left}
+.titulo-home{ font-size:20px; line-height: 29.5px; font-weight:700; font-family: 'Open Sans', sans-serif; color:#FFF; margin-left: /*23*/0px; padding-left: 23px; vertical-align:central; background:url(img/bg_titulo-home.jpg) repeat-x 0 0; width: 95%; height:29.5px; margin-top: 20px; margin-right: 20px; padding-bottom: -25px; display:block}
+/*---BUSCA-----*/
+#busca{ width:260px; height: 70px; display:block; float:left; margin:0 auto; padding:0;}
+#searchform{ width:100%; height:29.5px; background:url(img/bg_busca-home.jpg) repeat-x 0 0; width: 95%; height:29.5px; float:right; line-height: 29.5px; margin-top: 19.8px;}
+.label-busca{ font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13.5px; color:#FFF; margin-left: 10px; margin-right:10px;  }
+
+/*---CONTEUDO-sindicato-------------------------------------------------------------------------------------------------------------------------------------------*/
+#conteudo #conteudo-sindicato{ width:603px; float:left; display:block; background:#960; height:300px;}
+
+#conteudo #lateral-sindicato1{width:272px; float:left; display:block; background:#9C0; height:300px;}
+
+#conteudo #conteudo-repres{ width:603px; float:left; display:block; background: #F30; height:200px;}
+
+#conteudo #lateral-sindicato2{width:272px; float:left; display:block; background: #F63; height:200px;}
+
+#conteudo #estrutura{ width:100%; float:left; display:block; background:#639; height:350px;}
+
+#conteudo #estrutura .cols{ width:25%; float:left; display:block; background:#639; height:350px;}
+
+
+/*---CONTEUDO-juridico-------------------------------------------------------------------------------------------------------------------------------------------*/
+#conteudo #topo-juridico{ width:100%; height:300px; background: #F90; display:block; float:left;}
+#conteudo #destaques-juridicos{ width: 100%; height: 350px; background:#969; float:left; display:block}
+#conteudo #conteudo-juridico{ height:500px; width:100%; background: #C69; display:block; float: left; }
+
+
+/*---CONTEUDO-servicos-------------------------------------------------------------------------------------------------------------------------------------------*/
+#conteudo #topo-servicos{ width:100%; height:300px; background: #F90; display:block; float:left;}
+#conteudo #destaques-servicos{ width: 100%; height: 350px; background:#969; float:left; display:block}
+#conteudo #conteudo-servicos{ height:500px; width:100%; background: #C69; display:block; float: left; }
+
+
+/*---CONTEUDO-noticias-------------------------------------------------------------------------------------------------------------------------------------------*/
+#conteudo #topo-noticias{ width:100%; height:300px; background: #F90; display:block; float:left;}
+#conteudo #destaques-noticias{ width: 100%; height: 350px; background:#969; float:left; display:block}
+#conteudo #conteudo-noticias{ height:500px; width:100%; background: #C69; display:block; float: left; }
+
+
+/*---CONTEUDO-contato-------------------------------------------------------------------------------------------------------------------------------------------*/
+#conteudo #topo-contato{ width:100%; height:300px; background: #F90; display:block; float:left;}
+#conteudo #conteudo-contato{ height:500px; width:100%; background: #C69; display:block; float: left; }
+
+
+/*---RODAPE-------------------------------------------------------------------------------------------------------------------------------------------*/
+#rodape{ clear:left;width: 875px; height:90px; background:#009; display:block;}
