@@ -91,7 +91,15 @@ div.slide { width:875px; height:458px; display:block; }
 
 
 /*---CONTEUDO-HOME-------------------------------------------------------------------------------------------------------------------------------------------*/
-#conteudo #destaques-home{ clear:both; width: 100%; height: 350px; background:#969; float:left; display:block}
+#conteudo #destaques-home{ clear:both; width: 100%; height: auto; padding-bottom:40px; float:left; display:block}
+
+#conteudo #destaques-home div{ width:175px; float:left;}
+#conteudo #destaques-home div p{ margin:15px 15px 25px 15px; font-family: 'Open Sans', sans-serif; font-weight:400; font-size:13px; text-align:left; letter-spacing:0px; color:#7f7f7f}
+.post-111 .bt-dest-home{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#a14b2b; padding: 5px 10px; text-decoration:none; margin-left: 30px;}
+.post-108 .bt-dest-home{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#574b43; padding: 5px 10px; text-decoration:none; margin-left: 40px;}
+.post-105 .bt-dest-home{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#cdaf2e; padding: 5px 10px; text-decoration:none; margin-left: 30px;}
+.post-102 .bt-dest-home{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#637b1e; padding: 5px 10px; text-decoration:none; margin-left: 10px;}
+.post-99 .bt-dest-home{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#467e81; padding: 5px 10px; text-decoration:none; margin-left: 40px;}
 
 #conteudo #conteudo-home{ height:auto; width:100%; background:#633; display:block; float: left; }
 
@@ -100,6 +108,9 @@ div.slide { width:875px; height:458px; display:block; }
 #conteudo #conteudo-home #col2-home{ width:347px; height:440px; background:#990; display:block; float: left;}
 
 #conteudo #conteudo-home #col3-home{ width:181px; height:440px; background:#9C0; display:block; float: left;}
+
+/*---FIM DO CONTEUDO-HOME-----*/
+
 
 #titulo-busca{ width:875px; height: 70px; display:block; float:left; background:#FFF; }
 #tituloh{ width: 615px; height:70px; float:left}
@@ -147,4 +158,13 @@ div.slide { width:875px; height:458px; display:block; }
 
 
 /*---RODAPE-------------------------------------------------------------------------------------------------------------------------------------------*/
-#rodape{ clear:left;width: 875px; height:90px; background:#009; display:block;}
+#rodape{ clear:left;width: 875px; height: auto; background:#fff; display:block; padding-top: 20px; padding-bottom: 20px;}
+#conteudo-rodape{ width:855px; height:60px; background:#3b6e8f; margin-left: 10px; margin-right: 10px; }
+
+#conteudo-rodape .rodape-col1{ width:59%; height:50px; float:left; margin-top:5px; overflow:hidden; border-right:1px solid #fff}
+#conteudo-rodape .rodape-col2 {width:20%; height:50px; background:# 09F; float:left; margin-top:5px; overflow:hidden; border-right:1px solid #fff; text-align:center; line-height:50px;}
+#conteudo-rodape .rodape-col3{width:20%; height:50px; background:# 06F; float:left; margin-top:5px; overflow:hidden;}
+
+#conteudo-rodape .rodape-col1 p{ margin-left: 10px;}
+#conteudo-rodape .rodape-col3 p{ margin-left: 10px; margin-right:10px}
+#conteudo-rodape p{color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:400; font-size:11px;}

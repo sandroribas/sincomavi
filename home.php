@@ -22,7 +22,7 @@ Template Name: Home
 
 <div id="conteudo">
     <div id="destaques-home">
-    
+    	<?php get_template_part('loop', 'destaquesHome');?>
     </div><!--fim dos destaques-home-->
     
     <div id="conteudo-home">

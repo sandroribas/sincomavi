@@ -332,15 +332,6 @@ add_action('manage_posts_custom_column', 'ST4_columns_content', 10, 2);
 		'after_widget'=>'</span>',
 		'before_title'=>'<h1>',
 		'after_title'=>'</h1>',));
-		
-	    register_sidebar(array('name'=>'Rodapé D',
-		'name' => __( 'Rodapé D' ),
-		'id'=>'rodape-d',
-		'description' => __( 'Inclua Widgets no Rodapé A.' ),
-		'before_widget'=>'<div>',
-		'after_widget'=>'</div>',
-		'before_title'=>'<h1>',
-		'after_title'=>'</h1>',));
 /*---FIM DO REGISTRO DAS MÚLTIPLAS SIDEBARS---*/
 
 /*--BUSCA-------------------------------------------------------------------------------------------------------------------------------------------------*/
