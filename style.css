@@ -76,8 +76,8 @@ div.slide {
 }
 
 
-.caption a{ text-decoration:none; outline:none; border: none; display:block; width:auto; height:80px;}
-.caption a p{ color: #fff; margin: 0px; text-decoration:none; font-family: 'Open Sans', sans-serif; font-weight:400; font-size:15px; margin: 30px 20px;}
+.caption p a{ text-decoration:none; outline:none; border: none; display:block; width:auto; height:80px;}
+.caption p{ color: #fff; margin: 0px; text-decoration:none; font-family: 'Open Sans', sans-serif; font-weight:400; font-size:15px; margin: 30px 20px;}
 
 .caption a *:hover{color: #060  !important;}
 
