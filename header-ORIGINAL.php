@@ -25,12 +25,10 @@
 	<!-- //////// jQuery //////// -->
 	<?php //wp_enqueue_script("jquery"); ?>
     
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<!-- ////////Script personalizado ////////  -->
     <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/slides.min.jquery.js"></script>
-    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.bgpos.js"></script>
-    <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/js/sincomavi.js"></script>
-    <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/js/menu.js"></script>
+	<script type="text/javascript" src="<?php bloginfo("template_url"); ?>/js/sincomavi.js"></script>
 
 </head>
 
@@ -42,21 +40,11 @@
              	<img class="logot" src="<?php bloginfo('template_directory');?>/img/logo-topo.png" alt="SINCOMAVI" />
              </div><!--fim logo-topo-->
              <div id="nav-topo">
-				<?php  //menu class walker
-                wp_nav_menu( array(
-                 'container' =>false,
-                 'theme_location' => 'nav-topo',
-                                'menu' => 'menuPrincipal',
-                                'menu_id' => 'dropdown-menu',
-                                'menu_class' => 'menu',
-                                 'menu_class' => 'nav',
-                                 'echo' => true,
-                                 'before' => '',
-                                 'after' => '',
-                                 'link_before' => '',
-                                 'link_after' => '',
-                                 'depth' => 0,
-                                 'walker' => new description_walker())
-                 );
-                  ?>
+             	<ul>
+             		<li><a id="item1" href="#">SINDICATO</a></li>
+             		<li><a id="item2" href="#">JURÍDICO</a></li>
+             		<li><a id="item3" href="#">SERVIÇOS</a></li>
+             		<li><a id="item4" href="#">NOTÍCIAS</a></li>
+             		<li><a id="item5" href="#">CONTATO</a></li>
+             	</ul>
              </div><!--fim nav-topo-->

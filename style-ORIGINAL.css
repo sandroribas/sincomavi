@@ -23,80 +23,66 @@ body{width:100%; height:auto; background:#656565;}
 #topo #logo-topo img{ padding-left: 27px; padding-top:18px;}
 /*---NAV-------------------------------------------------------------------------------------------------------------------------------------------*/
 #topo #nav-topo{ float:left;  height:100%; width:636px; }
-/*#topo #nav-topo ul{ width: 100%; height:100%;}
+#topo #nav-topo ul{ width: 100%; height:100%;}
 #topo #nav-topo li{ float: left; overflow: hidden; width: 19.876%; height:167px; text-align:center; border-left:1px solid #eee  }
 #topo #nav-topo li:first-child, li:last-child{ border-left:none;}
-#topo #nav-topo li a{ display:block; width:100%; height: 167px; margin:0 auto; padding-top:95px; color:#7f7f7f; text-decoration:none; font-family: 'Open Sans', sans-serif; font-weight:400; font-size:14px;}*/
+#topo #nav-topo li a{ display:block; width:100%; height: 167px; margin:0 auto; padding-top:95px; color:#7f7f7f; text-decoration:none; font-family: 'Open Sans', sans-serif; font-weight:400; font-size:14px; border-top:13px solid #3b6e8f;}
 
+#topo #nav-topo li a #item1{ border-top:13px solid #3b6e8f; display:block}
+#topo #nav-topo li a #item2{ border-top:13px solid #a14b2b; display:block}
+#topo #nav-topo li a .item3{ border-top:13px solid #574b43; display:block}
+#topo #nav-topo li a .item4{ border-top:13px solid #cdaf2e; display:block}
+#topo #nav-topo li a .item5{ border-top:13px solid #637b1e; display:block}
 
-/*#topo #nav-topo li a:hover{ border-top:13px solid #09F;}*/
-/*---NOVO!!!!!!!!!!!!!!!!!!-----*/
-#nav-topo #dropdown-menu { list-style:none; margin:0; padding:0; width: 100%; height:167px; }
-	
-	#nav-topo li { float: left; overflow:hidden; padding: 0px 0px; margin:0; width: 16.53%/*19.876%*/; height:167px; text-align:center; border-left:1px solid #eee }
-	#nav-topo li:first-child, li:last-child{ border-left:none;}
-	
-	#nav-topo li#menu-item-94 a { display:block; padding:0px 0px; height:167px; width: 100%; text-decoration:none; overflow:hidden; background:url(img/bt0-menu.jpg) repeat 0 0; margin: 0px; padding: 0px; }
-	#nav-topo li#menu-item-89 a { display:block; padding:0px 0px; height:167px; width: 100%; text-decoration:none; overflow:hidden; background:url(img/bt1-menu.jpg) repeat 0 0; margin: 0px; padding: 0px; }
-	
-	#nav-topo li#menu-item-90 a { display:block; padding:0px 0px; height:167px; width: 100%; text-decoration:none; overflow:hidden; background:url(img/bt2-menu.jpg) repeat 0 0; margin: 0px; padding: 0px; }
-	
-	#nav-topo li#menu-item-91 a { display:block; padding:0px 0px; height:167px; width: 100%; text-decoration:none; overflow:hidden; background:url(img/bt3-menu.jpg) repeat 0 0; margin: 0px; padding: 0px; }
-	#nav-topo li#menu-item-92 a { display:block; padding:0px 0px; height:167px; width: 100%; text-decoration:none; overflow:hidden; background:url(img/bt4-menu.jpg) repeat 0 0; margin: 0px; padding: 0px; }
-	#nav-topo li#menu-item-93 a { display:block; padding:0px 0px; height:167px; width: 100%; text-decoration:none; overflow:hidden; background:url(img/bt5-menu.jpg) repeat 0 0; margin: 0px; padding: 0px; }
-	
-	#nav-topo li strong{ display:block; padding-top: 100px; text-decoration:none; font-family: 'Open Sans', sans-serif; font-weight:400; font-size:14px; color:#7f7f7f; width:100%; height:167px;}
-	#nav-topo li span{ display:none; /* font-size: 10px;*/}
-	
-	#nav-topo li a *:hover{ color:#eeeeee !important;}
-	
-	#nav-topo li.current *{color:#fff !important; background-position:0px 0px !important;}
-	#nav-topo li.current-menu-item *{color:#fff !important; background-position:0px -10px !important;}
-	#nav-topo li.current a{background-position:0px -10px !important;}
-	#nav-topo li.current-menu-item a{background-position:0px -10px !important;}
-	
-	#dropdown-menu li{ border-left: #eee 1px solid; }
-	#dropdown-menu li:first-child{border-left: none; }
-	
-	.sub-menu { z-index:150; width:200px; height: 200px; background:#FFF}
-	.sub-menu li { }
-	.sub-menu li a{ }
-	.sub-menu li a p{}
-	.sub-menu li a:hover, li a:focus, li a:active{}
-	.sub-menu li.current a{}
-	.sub-menu li.current-menu-item a{}
-	ul.sub-menu:first-child{}
-	ul.sub-menu:last-child{}
-	
-/*---SUB-MENU---*/
-.sub-menu{}
-	ul.sub-menu{}
-	ul.sub-menu li {}
-	/*ul.sub-menu li a {display:block; padding:0px; width: 300px !important; height:77px; text-decoration:none; }*/
-	
-	.sub-menu li a{  }
-	.sub-menu li a p{ }
-	.sub-menu li a:hover, li a:focus, li a:active{ }
-	
-	ul.sub-menu li.current a{}
-	ul.sub-menu li.current-menu-item a{}
-/*---FIM DO SUB-MENU---*/
-
-/*---FIM DA NAV-----*/
+#topo #nav-topo li a:hover{ border-top:13px solid #09F;}
 
 
 /*---SLIDER-------------------------------------------------------------------------------------------------------------------------------------------*/
-#topo #slider-topo{ position:relative; width:875px;	height:458px; z-index:100; display:block; float:left; overflow:hidden;}
+#topo #slider-topo{ /*background: #FF6; float:left;  height:458px; width:100%; display:block; float:left;*/
+	position:relative;
+	width:875px;
+	height:458px;
+	
+	z-index:100;
+	display:block;
+	float:left;
+	overflow:hidden;
+}
 
-div.slide { width:875px; height:458px; display:block; }
+div.slide {
+	width:875px;
+	height:458px;
+	display:block;
+}
 
-.caption { text-align:left; z-index:500; position:absolute;	top:378px; left:0px; height:80px; width:100%; padding:0px 0px 0 0px; background:#a14b2b; background:rgba(161,75,43,.8); color:#ff3300;  display:block; overflow:hidden; }
+.caption{/*width:100%; height:60px; background: #a14b2b; position:relative; top: 398px; z-index: 10;*/}
+
+.caption {
+	text-align:left;
+	z-index:500;
+	position:absolute;
+	top:378px;
+	left:0px;
+	height:80px;
+	width:100%;
+	padding:0px 0px 0 0px;
+	background:#a14b2b;
+	background:rgba(161,75,43,.8);
+	
+	color:#ff3300;
+	display:block;
+	overflow:hidden;
+	
+}
 
 
 .caption p a{ text-decoration:none; outline:none; border: none; display:block; width:auto; height:80px;}
 .caption p{ color: #fff; margin: 0px; text-decoration:none; font-family: 'Open Sans', sans-serif; font-weight:400; font-size:15px; margin: 30px 20px;}
 
 .caption a *:hover{color: #060  !important;}
+
+
+.flex-caption{}
 
 /*---CONTEUDO-------------------------------------------------------------------------------------------------------------------------------------------------*/
 #conteudo{ clear:both; /*float:left; */display:block; height:auto; width:875px; background:#FFF;}
