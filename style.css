@@ -12,7 +12,7 @@ Author URI: http://www.twobrasil.com
 body{width:100%; height:auto; background:#656565;}
 
 #container{ width:100%; height:100%; }
-#site{ width:875px; height:auto; background:#fff; padding-bottom:50px;}
+#site{ width:875px; height:auto; background:#fff; /*padding-bottom:5px;*/}
 
 /*---TOPO-------------------------------------------------------------------------------------------------------------------------------------------*/
 #topo{ width:100%; height:167px; border-top: 8px solid #3b6e8f;}
