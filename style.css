@@ -74,7 +74,7 @@ body{width:100%; height:auto; background:#656565;}
 
 
 /*---SLIDER-------------------------------------------------------------------------------------------------------------------------------------------*/
-#topo #slider-topo{ position:relative; width:875px;	height:458px; z-index:100; display:block; float:left; overflow:hidden;}
+#topo #slider-topo{ position:relative; width:875px;	height:458px; z-index:100; display:block; float:left; overflow:hidden; margin-top:20px;}
 
 div.slide { width:875px; height:458px; display:block; }
 

@@ -12,7 +12,7 @@
 <meta http-equiv="expires" content="never"/>
 <meta name="robots" content="index,follow" />
 <meta name="revisit-after" content="1 Days" />
-<title><?php if (is_home () ) { bloginfo('name'); } elseif (is_category() || is_tag()) { single_cat_title(); echo ' &bull; ' ; bloginfo('name'); } elseif (is_single() || is_page()) { single_post_title(); } else { wp_title('',true); } ?>
+<title><?php bloginfo('name'); echo ' &bull; ' ; if (is_home () ) { bloginfo('name'); } elseif (is_category() || is_tag()) { single_cat_title(); echo ' &bull; ' ; bloginfo('name'); } elseif (is_single() || is_page()) { single_post_title(); } else { wp_title('',true); } ?>
 </title>
 
 <!-- //////// Favicon ////////  -->
