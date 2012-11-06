@@ -310,8 +310,8 @@ add_action('manage_posts_custom_column', 'ST4_columns_content', 10, 2);
 		'name' => __( 'Rodapé A' ),
 		'id'=>'rodape-a',
 		'description' => __( 'Inclua Widgets no Rodapé A.' ),
-		'before_widget'=>'<span>',
-		'after_widget'=>'</span>',
+		'before_widget'=>'',
+		'after_widget'=>'',
 		'before_title'=>'<h1>',
 		'after_title'=>'</h1>',));
 	
@@ -319,8 +319,8 @@ add_action('manage_posts_custom_column', 'ST4_columns_content', 10, 2);
 		'name' => __( 'Rodapé B' ),
 		'id'=>'rodape-b',
 		'description' => __( 'Inclua Widgets no Rodapé A.' ),
-		'before_widget'=>'<ul>',
-		'after_widget'=>'</ul>',
+		'before_widget'=>'',
+		'after_widget'=>'',
 		'before_title'=>'<h1>',
 		'after_title'=>'</h1>',));
 		
@@ -328,8 +328,8 @@ add_action('manage_posts_custom_column', 'ST4_columns_content', 10, 2);
 		'name' => __( 'Rodapé C' ),
 		'id'=>'rodape-c',
 		'description' => __( 'Inclua Widgets no Rodapé A.' ),
-		'before_widget'=>'<span class="endereco-rdp">',
-		'after_widget'=>'</span>',
+		'before_widget'=>'<ul>',
+		'after_widget'=>'</ul>',
 		'before_title'=>'<h1>',
 		'after_title'=>'</h1>',));
 /*---FIM DO REGISTRO DAS MÚLTIPLAS SIDEBARS---*/
