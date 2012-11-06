@@ -58,6 +58,7 @@ body{width:100%; height:auto; background:#656565;}
 	#dropdown-menu li{ border-left: #eee 1px solid; }
 	#dropdown-menu li:first-child{border-left: none; }
 	
+	/*---SUB-MENU---*/
 	.sub-menu { z-index:150; width:200px; height: 200px; background:#FFF}
 	.sub-menu li { }
 	.sub-menu li a{ }
@@ -67,20 +68,7 @@ body{width:100%; height:auto; background:#656565;}
 	.sub-menu li.current-menu-item a{}
 	ul.sub-menu:first-child{}
 	ul.sub-menu:last-child{}
-	
-/*---SUB-MENU---*/
-.sub-menu{}
-	ul.sub-menu{}
-	ul.sub-menu li {}
-	/*ul.sub-menu li a {display:block; padding:0px; width: 300px !important; height:77px; text-decoration:none; }*/
-	
-	.sub-menu li a{  }
-	.sub-menu li a p{ }
-	.sub-menu li a:hover, li a:focus, li a:active{ }
-	
-	ul.sub-menu li.current a{}
-	ul.sub-menu li.current-menu-item a{}
-/*---FIM DO SUB-MENU---*/
+	/*---FIM DO SUB-MENU---*/
 
 /*---FIM DA NAV-----*/
 
