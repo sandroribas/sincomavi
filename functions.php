@@ -216,10 +216,10 @@ add_action('admin_head', 'add_custom_admin_styles');
 /*---alterando o texto do footer do painel admin ===========================================================================*/
 add_filter('admin_footer_text', 'remove_footer_admin'); 
 function remove_footer_admin () {
-echo "Arist&aacute;tico &amp; Souza 2012";
+echo "SINCOMAVI 2012";
 }
 
-function change_footer_version() {return 'Aristático & Souza CMS Admin - Versão 1.0';}
+function change_footer_version() {return 'SINCOMAVI CMS Admin - Versão 1.0';}
 add_filter( 'update_footer', 'change_footer_version', 9999);
 
 /*---separando posts de custom posts por colunas no admin----------------------------------------------------------------*/
