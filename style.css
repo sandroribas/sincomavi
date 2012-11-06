@@ -78,11 +78,11 @@ body{width:100%; height:auto; background:#656565;}
 
 div.slide { width:875px; height:458px; display:block; }
 
-.caption { text-align:left; z-index:500; position:absolute;	top:378px; left:0px; height:80px; width:100%; padding:0px 0px 0 0px; background:#a14b2b; background:rgba(161,75,43,.8); color:#ff3300;  display:block; overflow:hidden; }
+.caption { text-align:left; z-index:500; position:absolute;	top:398px; left:0px; height:60px; width:100%; padding:0px 0px 0 0px; background:#a14b2b; background:rgba(161,75,43,.8); color:#ff3300;  display:block; overflow:hidden; }
 
 
-.caption p a{ text-decoration:none; outline:none; border: none; display:block; width:auto; height:80px;}
-.caption p{ color: #fff; margin: 0px; text-decoration:none; font-family: 'Open Sans', sans-serif; font-weight:400; font-size:15px; margin: 30px 20px;}
+.caption p a{ text-decoration:none; outline:none; border: none; display:block; width:auto; height:60px;}
+.caption p{ color: #fff; margin: 0px; text-decoration:none; font-family: 'Open Sans', sans-serif; font-weight:400; font-size:15px; margin: 10px 10px;}
 
 .caption a *:hover{color: #060  !important;}
 
@@ -102,7 +102,7 @@ div.slide { width:875px; height:458px; display:block; }
 .post-99 .bt-dest-home{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#467e81; padding: 5px 10px; text-decoration:none; margin-left: 40px;}
 
 
-#conteudo #conteudo-home{ height:auto; width:100%; background:#e5e5e5; display:block; float: left; }
+#conteudo #conteudo-home{ height:auto; width:100%; background:#e5e5e5; display:block; float: left; padding-top:15px; padding-bottom:15px}
 #conteudo #conteudo-home #noticias-home{width:346px; height:auto; display:block; float: left; border-right:1px solid #3b6e8f; }
 #noticias-home .noticia-home{ width:100%; height:auto; margin-bottom: 20px;}
 
