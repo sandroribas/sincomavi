@@ -101,13 +101,19 @@ div.slide { width:875px; height:458px; display:block; }
 .post-102 .bt-dest-home{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#637b1e; padding: 5px 10px; text-decoration:none; margin-left: 10px;}
 .post-99 .bt-dest-home{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#467e81; padding: 5px 10px; text-decoration:none; margin-left: 40px;}
 
-#conteudo #conteudo-home{ height:auto; width:100%; background:#633; display:block; float: left; }
 
-#conteudo #conteudo-home #col1-home{width:347px; height:440px; background:#960; display:block; float: left;}
+#conteudo #conteudo-home{ height:auto; width:100%; background:#e5e5e5; display:block; float: left; }
+#conteudo #conteudo-home #noticias-home{width:346px; height:auto; display:block; float: left; border-right:1px solid #3b6e8f; }
+#noticias-home .noticia-home{ width:100%; height:auto; margin-bottom: 20px;}
 
-#conteudo #conteudo-home #col2-home{ width:347px; height:440px; background:#990; display:block; float: left;}
+#noticias-home .noticia-home img{ width: 93%; height:auto; margin:10px 10px;}
+#noticias-home .noticia-home h1{ color:#3b6e8f; font-family: 'Open Sans', sans-serif; font-weight:700; font-size: 18px; margin:0px 10px;}
+#noticias-home .noticia-home p{ color:#656565; font-family: 'Open Sans', sans-serif; font-weight:400; font-size: 11px; margin: 0px 50px 0px 10px; text-align:justify}
 
-#conteudo #conteudo-home #col3-home{ width:181px; height:440px; background:#9C0; display:block; float: left;}
+.titulos-home{ color:#3b6e8f; font-family: 'Open Sans', sans-serif; font-weight:400; font-size: 24px; text-decoration:underline; margin: 5px 10px;}
+
+#conteudo #conteudo-home #col2-home{ width:347px; height:440px; display:block; float: left; }
+#conteudo #conteudo-home #anuncios-home{ width:181px; height:440px; display:block; float: left;}
 
 /*---FIM DO CONTEUDO-HOME-----*/
 

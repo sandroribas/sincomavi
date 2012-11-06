@@ -26,14 +26,17 @@ Template Name: Home
     </div><!--fim dos destaques-home-->
     
     <div id="conteudo-home">
-        <div id="col1-home">
-        
+        <div id="noticias-home">
+        	<h1 class="titulos-home"><?php _e('NOTÍCIAS','sincomavi')?></h1>
+        	<?php get_template_part('loop', 'noticiasHome');?>
         </div><!--fim da col1-home-->
         <div id="col2-home">
         
         </div><!--fim da col2-home-->
-        <div id="col3-home">
-        
+        <div id="anuncios-home">
+			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Anuncios Home') ) : ?>
+            <p><?php _e('Esta coluna é uma widget area. '); ?><?php _e('Adicione widgets nos '); ?><strong><?php _e('Anuncios Home'); ?></strong> <?php _e('para mais funcionalidades!'); ?></p>
+            <?php endif; ?>
         </div><!--fim da col3-home-->
     </div><!--fim do conteudo-home-->
 </div><!--fim do conteudo-->

@@ -259,27 +259,27 @@ add_action('manage_posts_custom_column', 'ST4_columns_content', 10, 2);
 /*---REGISTRANDO MÚLTIPLAS SIDEBARS(10)*/
 	if ( function_exists('register_sidebar') )
 		//HOME
-	    register_sidebar(array('name'=>'Home A',
-		'name' => __( 'Home A' ),
-		'id'=>'home-a',
-		'description' => __( 'Inclua Widgets na Home A.' ),
+	    register_sidebar(array('name'=>'Anuncios Home',
+		'name' => __( 'Anuncios Home' ),
+		'id'=>'anuncios-home',
+		'description' => __( 'Inclua Widgets nos Anuncios Home.' ),
 		'before_widget'=>'<div>',
 		'after_widget'=>'</div>',
 		'before_title'=>'<h1>',
 		'after_title'=>'</h1>',));
 		
-		register_sidebar(array('name'=>'Home B',
-		'name' => __( 'Home B' ),
-		'id'=>'home-b',
-		'description' => __( 'Inclua Widgets na Home B.' ),
+		register_sidebar(array('name'=>'Anuncios A',
+		'name' => __( 'Anuncios A' ),
+		'id'=>'anuncios-a',
+		'description' => __( 'Inclua Widgets na Anuncios A.' ),
 		'before_widget'=>'<div>',
 		'after_widget'=>'</div>',
-		'before_title'=>'<h1 class="pau">',
+		'before_title'=>'<h1>',
 		'after_title'=>'</h1>',));
 		
-		register_sidebar(array('name'=>'Lateral Home A',
-		'name' => __( 'Lateral Home A' ),
-		'id'=>'lateral-home-a',
+		register_sidebar(array('name'=>'Anuncios B',
+		'name' => __( 'Anuncios B' ),
+		'id'=>'anuncios-b',
 		'description' => __( 'Inclua Widgets na Lateral Home A.' ),
 		'before_widget'=>'<div>',
 		'after_widget'=>'</div>',
@@ -287,18 +287,18 @@ add_action('manage_posts_custom_column', 'ST4_columns_content', 10, 2);
 		'after_title'=>'</h1>',));
 		
 		//as sidebars auxiliares ainda estão sem uso
-		register_sidebar(array('name'=>'Sidebar Auxiliar Esquerda',
-		'name' => __( 'Sidebar Auxiliar Esquerda' ),
-		'id'=>'auxiliar-esquerda',
+		register_sidebar(array('name'=>'Sidebar 1',
+		'name' => __( 'Sidebar 1' ),
+		'id'=>'sidebar-1',
 		'description' => __( 'Inclua Widgets na Sidebar Auxiliar Esquerda.' ),
 		'before_widget'=>'<div>',
 		'after_widget'=>'</div>',
 		'before_title'=>'<h1">',
 		'after_title'=>'</h1>',));
 		
-		register_sidebar(array('name'=>'Sidebar Auxiliar Direita',
-		'name' => __( 'Sidebar Auxiliar Direita' ),
-		'id'=>'auxiliar-direita',
+		register_sidebar(array('name'=>'Sidebar 2',
+		'name' => __( 'Sidebar 2' ),
+		'id'=>'sidebar-2',
 		'description' => __( 'Inclua Widgets na Sidebar Auxiliar Direita.' ),
 		'before_widget'=>'<div>',
 		'after_widget'=>'</div>',
