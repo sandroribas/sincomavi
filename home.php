@@ -16,7 +16,7 @@ Template Name: Home
         </div><!--fim do tituloh-->
      	<?php get_search_form('minha_busca'); ?><!--fim da busca-->
      
-     </div><!--fim do titulo/busca-->
+     
 </div><!--fim do topo-->
 
 

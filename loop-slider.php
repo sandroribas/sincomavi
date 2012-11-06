@@ -5,10 +5,10 @@ $personalUrl = get_post_meta($post->ID, 'slide-url', true);//pegando campo perso
 	<?php the_post_thumbnail('post-thumbnails'); ?>
     <?php echo '</a></div>';  ?>
     <div class="caption">
-   <?php  echo '<a href="'.$personalUrl.'">';  ?>
+   <?php  //echo '<a href="'.$personalUrl.'">';  ?>
     	
-		<p><?php the_excerpt(); ?></p>
-        <?php echo '</a>';  ?>
+		<?php the_excerpt(); ?>
+        <?php //echo '</a>';  ?>
     </div><!--caption-->
     
 </div><!--slide-->

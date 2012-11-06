@@ -9,7 +9,7 @@
 ?>
 <div id="busca">
 	<form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-		<label class="label-busca">Busca</label><input type="text" class="field" name="s" id="s" placeholder="<?php esc_attr_e( '', 'sincomavi' ); ?>" />
+		<span class="label-busca">Busca</span><input type="text" class="field" name="s" id="s" />
 		<input type="hidden" class="submit" name="submit" id="searchsubmit" value="<?php esc_attr_e( 'Buscar', 'sincomavi' ); ?>" />
 	</form>
 </div>
