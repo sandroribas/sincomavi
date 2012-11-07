@@ -27,11 +27,13 @@ Template Name: Home
     
     <div id="conteudo-home">
         <div id="noticias-home">
-        	<h1 class="titulos-home"><?php _e('NOTÍCIAS','sincomavi')?></h1>
+        	<h1 class="titulos"><span class="linha-titulo"><?php _e('NOTÍCIAS','sincomavi')?></span></h1>
+     
         	<?php get_template_part('loop', 'noticiasHome');?>
         </div><!--fim da col1-home-->
         <div id="col2-home">
-        
+        	<h1 class="titulos"><span class="linha-titulo"><?php _e('SERVIÇOS','sincomavi')?></span></h1>
+            <h1 class="titulos"><span class="linha-titulo"><?php _e('CURSOS','sincomavi')?></span></h1>
         </div><!--fim da col2-home-->
         <div id="anuncios-home">
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Anuncios Home') ) : ?>

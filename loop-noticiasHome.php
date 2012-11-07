@@ -5,6 +5,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); //resumindo, se exist
 	<?php the_post_thumbnail('post-thumbnails'); ?>
     <h1><?php the_title(); ?></h1>
     <?php the_excerpt(); ?> 
+    <span class="divisor-cinza"></span>
     <!--<a class="bt-noticias-home" href="<?php //the_permalink(); ?>" title="<?php //the_title_attribute(); ?>"><?php //the_title(); ?></a>-->
 </div><!--fim dos noticias-home-->                   
 <?php endwhile; else: //se não existirem posts, mostre a mensagem abaixo?>

@@ -5,13 +5,13 @@ $j(document).ready(function(){
 			$j('#slider-topo').slides({
 				preload: true,
 				preloadImage: './wp-content/themes/sincomavi/img/loading.gif',
-				play: 5000,
+				play: 10000,
 				pause: 2500,
 				hoverPause: true,
 				animationStart: function(current){
 					$j('.caption').animate({
 						opacity:0
-					},500);
+					},1000);
 					if (window.console && console.log) {
 						// example return of current slide number
 						console.log('animationStart on slide: ', current);
@@ -20,7 +20,7 @@ $j(document).ready(function(){
 				animationComplete: function(current){
 					$j('.caption').animate({
 						opacity:1
-					},500);
+					},1000);
 					if (window.console && console.log) {
 						// example return of current slide number
 						console.log('animationComplete on slide: ', current);
@@ -29,11 +29,33 @@ $j(document).ready(function(){
 				slidesLoaded: function() {
 					$j('.caption').animate({
 						opacity:1
-					},500);
+					},1000);
 				}
 			});
 		});
 		/*---FIM DO SLIDER-----*/
+		
+		//Faux columns 1
+		function mesmaAltura(noticiasJS, anunciosJS){
+			noticiasJSAltura = $j(noticiasJS).height();
+			anunciosJSAltura = $j(anunciosJS).height();
+			maiorAltura = Math.max(noticiasJSAltura, anunciosJSAltura);
+			
+			$j(noticiasJS).height(maiorAltura);
+			$j(anunciosJS).height(maiorAltura);
+		};
+		mesmaAltura('#noticias-home','#col2-home')
+		
+		//Faux columns 2
+		function mesmaAlturaJ(noticiasJ, anunciosJ){
+			noticiasJAltura = $j(noticiasJ).height();
+			anunciosJAltura = $j(anunciosJ).height();
+			maiorAlturaJ = Math.max(noticiasJAltura, anunciosJAltura);
+			
+			$j(noticiasJ).height(maiorAlturaJ);
+			$j(anunciosJ).height(maiorAlturaJ);
+		};
+		mesmaAlturaJ('#noticias-home','#anuncios-home')
 });
 
 /*---MENU-----*/
