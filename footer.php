@@ -14,9 +14,12 @@
                 </div><!--rodape-cols fim-->
                 
                 <div class="rodape-col3">
-					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Rodape C') ) : ?>
-                    <p><?php _e('Esta coluna é uma widget area. '); ?><?php _e('Adicione widgets no '); ?><strong><?php _e('Footer A'); ?></strong> <?php _e('para mais funcionalidades!'); ?></p>
-                    <?php endif; ?>
+					<ul>
+					  <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/twitter-ico.png" alt="Siga-nos!" /></a></li>
+					  <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/fb-ico.png" alt="Curta a SINCOMAVI no Facebook!" /></a></li>
+					  <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/pin-ico.png" alt="Pin us!" /></a></li>
+					  <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/rss-ico.png" alt="Assine nossa RSS!" /></a></li>
+					</ul>
                 </div><!--rodape-cols fim-->
                 
             </div><!--fim do conteudo-rodape-->

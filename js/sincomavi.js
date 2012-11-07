@@ -44,7 +44,7 @@ $j(document).ready(function(){
 			$j(noticiasJS).height(maiorAltura);
 			$j(anunciosJS).height(maiorAltura);
 		};
-		mesmaAltura('#noticias-home','#col2-home')
+		mesmaAltura('#noticias-home','#col2-home');
 		
 		//Faux columns 2
 		function mesmaAlturaJ(noticiasJ, anunciosJ){
@@ -55,7 +55,19 @@ $j(document).ready(function(){
 			$j(noticiasJ).height(maiorAlturaJ);
 			$j(anunciosJ).height(maiorAlturaJ);
 		};
-		mesmaAlturaJ('#noticias-home','#anuncios-home')
+		mesmaAlturaJ('#noticias-home','#anuncios-home');
+		
+		//Faux columns 3
+		function mesmaAlturaJA(noticiasJA, anunciosJA){
+			noticiasJAAltura = $j(noticiasJA).height();
+			anunciosJAAltura = $j(anunciosJA).height();
+			maiorAlturaJA = Math.max(noticiasJAAltura, anunciosJAAltura);
+			
+			$j(noticiasJA).height(maiorAlturaJA);
+			$j(anunciosJA).height(maiorAlturaJA);
+		};
+		mesmaAlturaJA('#conteudo-sindicato','#lateral-sindicato1');
+		
 });
 
 /*---MENU-----*/
