@@ -156,7 +156,7 @@ padding-left:2px; }
 .label-busca{ font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13.5px; color:#FFF; margin-left: 10px; margin-right:10px; text-shadow: 0.1em 0.1em 0.05em #999; }
 
 /*---CONTEUDO-sindicato-------------------------------------------------------------------------------------------------------------------------------------------*/
-#conteudo #conteudo-sindicato{ width:603px; float:left; display:block; background:#fff; font-family: 'Open Sans', sans-serif; height:auto;  min-height:643px; padding-bottom:20px}
+#conteudo #conteudo-sindicato{ margin-top:20px; width:603px; float:left; display:block; background:#fff; font-family: 'Open Sans', sans-serif; height:auto;  min-height:643px; padding-bottom:20px}
 #conteudo-sindicato .post{ width:100%; height:auto; margin-bottom: 10px; }
 #conteudo-sindicato .post #img1{ height:130px; width: 165px; }
 #conteudo-sindicato .post #img2{ height:130px; width: 410px; }
@@ -171,7 +171,7 @@ padding-left:2px; }
 
 /*---REPRESENTAÇÃO-----*/
 #conteudo-sindicato .post-174{ background:url(img/bg_repres.jpg) no-repeat 10px 0; height:391px;}
-#conteudo-sindicato .post-174 #titulopg{ width: auto; height: auto; float:left}
+#conteudo-sindicato .post-174 .titulopg{ width: auto; height: auto; float:left}
 #conteudo-sindicato .post-174 .titulo-pg{ font-size:20px; line-height: 29.5px; font-weight:700; font-family: 'Open Sans', sans-serif; color:#FFF; margin-left: 20px; padding-left: 10px; padding-right:10px; vertical-align:central; background:url(img/bg_titulo-home.jpg) repeat-x 0 0; width: auto; height:29.5px; margin-top: 30px; margin-right: 0px; padding-bottom: 15px; display:block; text-transform:uppercase;}
 #conteudo-sindicato .post-174 h2{ font-family: 'Open Sans', sans-serif; font-weight:700; color: #3B6E8F; font-size:14px; margin-left: 20px; }
 #conteudo-sindicato .post-174 p{ font-family: 'Open Sans', sans-serif; font-weight:400; font-size:12px ; margin-left: 20px; margin-right:20px; margin-bottom:20px; color:#656565}
@@ -181,7 +181,7 @@ padding-left:2px; }
 #lateral-sindicato1 #busca #searchform{ margin-top:0px;}
 
 
-#conteudo #lateral-sindicato1{width:272px; float:left; display:block; background:#fff; height: auto; padding-bottom:20px}
+#conteudo #lateral-sindicato1{ margin-top:20px; width:272px; float:left; display:block; background:#fff; height: auto; padding-bottom:20px}
 
 #conteudo #estrutura{ width:100%; float:left; display:block; background:#639; height:350px;}
 
