@@ -30,7 +30,9 @@ Template Name: Sindicato
             </div><!--fim da lateral-sindicato-->
             
             <div id="estrutura">
-            
+            	<div class="titulo1"><h1 class="titulo1-1"><?php _e('ESTRUTURA','sincomavi')?></h1></div>
+                <h2><span><?php _e('SINCOMAVI conta com alto grau de informatização','sincomavi')?></span></h2>
+            	<?php get_template_part('loop', 'sindicatoEstrutura');?>
             </div><!--fim da estrutura-->
 </div><!--fim do conteudo-->
 <?php get_footer(); //chama o rodape do site ?>

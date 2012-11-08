@@ -33,7 +33,7 @@
 
 </head>
 
-<body>
+<body <?php body_class();?>>
 <div id="container">
 	<div id="site">
     	<div id="topo">

@@ -12,7 +12,7 @@ Template Name: Home
      </div><!--fim do slider-topo-->
      <div id="titulo-busca">
      	<div id="tituloh">
-        	<h1 class="titulo-home">DESTAQUES</h1>
+        	<h1 class="titulo-home"><?php _e('DESTAQUES','sincomavi')?></h1>
         </div><!--fim do tituloh-->
      	<?php get_search_form('minha_busca'); ?><!--fim da busca-->
      

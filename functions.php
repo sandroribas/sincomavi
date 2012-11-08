@@ -377,7 +377,7 @@ function my_theme_setup(){
 
 //---GOOGLE FONTS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!---------------------------------------------------------------------------------
 function load_fonts() {
-            wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700,800');
+            wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300');
             wp_enqueue_style( 'googleFonts');
         }
  
