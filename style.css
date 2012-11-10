@@ -200,15 +200,15 @@ padding-left:2px; }
 
 #conteudo #lateral-sindicato1{ margin-top:20px; width:272px; float:left; display:block; background:#fff; height: auto; padding-bottom:20px}
 /*---DIRETORIA LATERAL-----*/
-#diretoria{ display: block; height: 460px; width: 250px; overflow:hidden;z-index:32; position:relative; left:0px; top:0px; float:left; margin-left: 22px; margin-top:15px;}
-#dir-div1{ background: #3B6E8F;  height: 460px; width: 250px; position: absolute; z-index:34; top:0px; left:0px; float:left;  }
-#dir-div2{ background: #3B6E8F;  height: 460px; width: 250px; position: absolute; z-index:33; top:0px; left:0px float:left;  }
-#diretoria #dir-div1 .bt-mais{ background:url(img/bt-mais.png) no-repeat; height:20px; width:20px; overflow:hidden; display:block; position: absolute; top:435px; left:225px; opacity:1; -webkit-opacity:1; -moz-opacity:1;  }
-#diretoria #dir-div2 .bt-menos{background:url(img/bt-menos.png) no-repeat; height:20px; width:20px; overflow:hidden;  display:block; position: absolute; top:435px; left:225px;  }
-#diretoria div h2{ color:#FFF; color:#FFF; font-family: 'Open Sans', sans-serif; font-weight:400; font-size:23px; margin-bottom:3px; margin-left: 10px;}
-#diretoria div h3{ color:#FFF; color:#FFF; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; margin-bottom:0px; margin-top:0px; margin-left: 13px;}
+#diretoria{ display: block; height: 580px; width: 250px; overflow:hidden;z-index:32; position:relative; left:0px; top:15px; float:left; margin-left: 22px; }
+#dir-div1{ background: #3B6E8F;  height: 580px; width: 250px; position: absolute; z-index:34; top:0px; left:0px; float:left;  }
+#dir-div2{ background: #3B6E8F;  height: 580px; width: 250px; position: absolute; z-index:33; top:0px; left:0px float:left;  }
+#diretoria #dir-div1 .bt-mais{ background:url(img/bt-mais.png) no-repeat; height:20px; width:20px; overflow:hidden; display:block; position: absolute; top:545px; left:220px; opacity:1; -webkit-opacity:1; -moz-opacity:1;  }
+#diretoria #dir-div2 .bt-menos{background:url(img/bt-menos.png) no-repeat; height:20px; width:20px; overflow:hidden;  display:block; position: absolute; top:545px; left:220px;  }
+#diretoria div h2{ text-transform:uppercase; color:#FFF; color:#FFF; font-family: 'Open Sans', sans-serif; font-weight:400; font-size:23px; margin-bottom:15px; margin-top:15px; margin-left: 10px;}
+#diretoria div h3{ color:#FFF; color:#FFF; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; margin-bottom:5px; margin-top:5px; margin-left: 13px;}
 #diretoria div h2 span{ padding-bottom:0px; border-bottom: 1px solid #FFF; margin-bottom:2px;}
-#diretoria div ul{ margin-left:0px; margin-bottom:4px; margin-top:0px; height:auto; width:250px;}
+#diretoria div ul{ margin-left:0px; margin-bottom:15px; margin-top:0px; height:auto; width:250px;}
 #diretoria div li{ list-style:url(img/li-diretoria.png);  color:#FFF; font-family: 'Open Sans', sans-serif; font-weight:300; font-size:11px; margin-left:25px; margin-right: 10px; margin-bottom:0px; margin-top:0px;}
 #diretoria div li strong{ color:#FFF; font-family: 'Open Sans', sans-serif; font-weight:600; font-size:11px;}
 

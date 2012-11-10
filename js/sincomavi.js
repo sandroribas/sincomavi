@@ -11,6 +11,15 @@ $j(document).ready(function(){
 		
 		});
 		
+		$j('.bt-menos').hover(function(){
+			$j('.bt-menos').animate({ 'opacity':'0.5' }, 500);
+		
+		} ,
+		function(){
+			$j('.bt-menos').animate({ 'opacity':'1' }, 500);
+		
+		});
+		
 		
 		$j('.bt-mais').click(function(){
 			//$j('#dir-div1').fadeOut();

@@ -29,94 +29,20 @@ Template Name: Sindicato
             	<?php get_search_form('minha_busca'); ?><!--fim da busca-->
                 <div id="diretoria">
                      <div id="dir-div1">
-                        <h2><span>DIRETORIA 01</span></h2>
-                        <h3>Efetiva</h3>
-                        <ul>
-                            <li><strong>Presidente:</strong> Reinaldo Pedro Correa</li>
-                            <li><strong>Vice-presidente:</strong> Luiz Henrique A. Marques</li>
-                            <li><strong>Secretário:</strong> Cláudio Araújo de Lima</li>
-                            <li><strong>Tesoureiro:</strong> Amílcar José de Sá</li>
-                        </ul>
-                        
-                        <h3>Suplentes</h3>
-                        <ul>
-                            <li>Lino Antonio Martins</li>
-                            <li>Ivan Sanches</li>
-                            <li>Luiz Herculano Pinto</li>
-                            <li>Alfredo A. Marin Morales</li>
-                        </ul>
-                        
-                         <h3>Conselho Fiscal</h3>
-                         <ul>
-                            <li>Roberto Fiorese Filho</li>
-                            <li>Hyppolito Martinez Trujillo </li>
-                            <li>Laurindo Francisco Diana</li>
-                         </ul>
-                         
-                         <h3>Suplentes</h3>
-                         <ul>
-                            <li>Clara Vasserman Fiorese</li>
-                            <li>Pasquale Cataldo</li>
-                            <li>Carlos Eduardo Dias</li>
-                         </ul>
-                         
-                         <h3>Delegados Representantes</h3>
-                         <ul>
-                            <li>Lázaro Antonio Infante</li>
-                            <li>Reinaldo Pedro Correa</li>
-                         </ul>
-                         
-                         <h3>Suplentes</h3>
-                         <ul>
-                            <li>Amílcar José de Sá</li>
-                            <li>Luiz Henrique A. Marques</li>
-                         </ul>
+                     	 <?php query_posts('p=278'); ?>
+							<?php while (have_posts()) : the_post(); ?>
+							<h2><span><?php the_title(); ?></span></h2>
+							<?php the_content(); ?>
+							<?php endwhile;?>
                         <a href="#" class="bt-mais"></a>
                     </div><!--fim da dir-div1-->
                     
                     <div id="dir-div2">
-                        <h2><span>DIRETORIA 02</span></h2>
-                        <h3>Efetiva</h3>
-                        <ul>
-                            <li>Presidente: Reinaldo Pedro Correa</li>
-                            <li>Vice-presidente: Luiz Henrique A. Marques</li>
-                            <li>Secretário: Cláudio Araújo de Lima</li>
-                            <li>Tesoureiro: Amílcar José de Sá</li>
-                        </ul>
-                        
-                        <h3>Suplentes</h3>
-                        <ul>
-                            <li>Lino Antonio Martins</li>
-                            <li>Ivan Sanches</li>
-                            <li>Luiz Herculano Pinto</li>
-                            <li>Alfredo A. Marin Morales</li>
-                        </ul>
-                        
-                         <h3>Conselho Fiscal</h3>
-                         <ul>
-                            <li>Roberto Fiorese Filho</li>
-                            <li>Hyppolito Martinez Trujillo </li>
-                            <li>Laurindo Francisco Diana</li>
-                         </ul>
-                         
-                         <h3>Suplentes</h3>
-                         <ul>
-                            <li>Clara Vasserman Fiorese</li>
-                            <li>Pasquale Cataldo</li>
-                            <li>Carlos Eduardo Dias</li>
-                         </ul>
-                         
-                         <h3>Delegados Representantes</h3>
-                         <ul>
-                            <li>Lázaro Antonio Infante</li>
-                            <li>Reinaldo Pedro Correa</li>
-                         </ul>
-                         
-                         <h3>Suplentes</h3>
-                         <ul>
-                            <li>Amílcar José de Sá</li>
-                            <li>Luiz Henrique A. Marques</li>
-                         </ul>
+                        <?php query_posts('p=276'); ?>
+							<?php while (have_posts()) : the_post(); ?>
+							<h2><span><?php the_title(); ?></span></h2>
+							<?php the_content(); ?>
+							<?php endwhile;?>
                          <a href="#" class="bt-menos"></a>
                     </div><!--fim da div-dir2-->
                     
