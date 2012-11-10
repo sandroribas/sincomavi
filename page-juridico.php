@@ -36,7 +36,7 @@ Template Name: Jurídco
                            	<h2><span class="bordas-tituloAzul"><?php _e('RESENHA TRIBUTÁRIA','sincomavi');?></span></h2>
 							<p><?php _e('As edições anteriores da Resenha Tributária podem ser acessadas no menu abaixo.','sincomavi'); ?></p>
                                 <select name="menu5" class="select" title="Arquivos"  onChange="window.open(document.jump5.menu5.options[document.jump5.menu5.selectedIndex].value)" value="GO">
-                                    <option class="optionss" value=""><?php _e('Arquivos','sincomavi');?></option>
+                                    <option class="optionss" ></option>
                                     <?php
                                     $bookmarks = get_bookmarks( array( 'orderby' => 'name', 'order' => 'ASC', 'category_name'  => 'Resenhas Tributárias' ));
                                     // Loop through each bookmark and print formatted output
@@ -79,7 +79,7 @@ Template Name: Jurídco
 								<p><?php _e('Neste menu o interessado tem a seu dispor as convenções coletivas celebradas em 2007.','sincomavi'); ?></p>
 
                                 <select name="menu" class="select" title="Arquivos"  onChange="window.open(document.jump.menu.options[document.jump.menu.selectedIndex].value)" value="GO">
-                                    <option value=""><?php _e('Arquivo','sincomavi');?></option>
+                                    <option></option>
                                     <?php
                                     $bookmarks = get_bookmarks( array( 'orderby' => 'name', 'order' => 'ASC', 'category_name'  => 'Consultorias' ));
                                     // Loop through each bookmark and print formatted output
@@ -99,7 +99,7 @@ Template Name: Jurídco
 								<p><?php _e('Neste menu o interessado tem a seu dispor as convenções coletivas celebradas em 2007.','sincomavi'); ?></p>
                                 
                                 <select name="menu2" class="select" title="Arquivos"  onChange="window.open(document.jump2.menu2.options[document.jump2.menu2.selectedIndex].value)" value="GO">
-                                    <option value=""><?php _e('Arquivo','sincomavi');?></option>
+                                    <option></option>
                                     <?php
                                     $bookmarks = get_bookmarks( array( 'orderby' => 'name', 'order' => 'ASC', 'category_name'  => 'Convenções 2007' ));
                                     // Loop through each bookmark and print formatted output
@@ -119,7 +119,7 @@ Template Name: Jurídco
 								<p><?php _e('Neste menu o interessado tem a seu dispor as convenções coletivas celebradas em 2007.','sincomavi'); ?></p>
                               
                                 <select name="menu3" class="select" title="Arquivos"  onChange="window.open(document.jump3.menu3.options[document.jump3.menu3.selectedIndex].value)" value="GO">
-                                    <option value=""><?php _e('Arquivo','sincomavi');?></option>
+                                    <option></option>
                                     <?php
                                     $bookmarks = get_bookmarks( array( 'orderby' => 'name', 'order' => 'ASC', 'category_name'  => 'Contribuições' ));
                                     // Loop through each bookmark and print formatted output
@@ -139,7 +139,7 @@ Template Name: Jurídco
 								<p><?php _e('Neste menu o interessado tem a seu dispor as convenções coletivas celebradas em 2007.','sincomavi'); ?></p>
                                 
                                 <select name="menu4" class="select" title="Arquivos"  onChange="window.open(document.jump4.menu4.options[document.jump4.menu4.selectedIndex].value)" value="GO">
-                                    <option value=""><?php _e('Arquivo','sincomavi');?></option>
+                                    <option></option>
                                     <?php
                                     $bookmarks = get_bookmarks( array( 'orderby' => 'name', 'order' => 'ASC', 'category_name'  => 'Outros Documentos' ));
                                     // Loop through each bookmark and print formatted output

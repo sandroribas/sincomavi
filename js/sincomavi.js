@@ -1,5 +1,28 @@
 var $j = jQuery.noConflict();	
 $j(document).ready(function(){
+		
+		/*---bts MAIS e MENOS-----*/
+		$j('.bt-mais').hover(function(){
+			$j('.bt-mais').animate({ 'opacity':'0.5' }, 500);
+		
+		} ,
+		function(){
+			$j('.bt-mais').animate({ 'opacity':'1' }, 500);
+		
+		});
+		
+		
+		$j('.bt-mais').click(function(){
+			//$j('#dir-div1').fadeOut();
+			$j('#dir-div1').animate({ 'left':'-250px', 'opacity':'0' }, 500);
+		});
+		
+		$j('.bt-menos').click(function(){
+			//$j('#dir-div1').fadeIn();
+			$j('#dir-div1').animate({ 'left':'0px', 'opacity':'1' }, 500);
+		});
+		/*---Fim dos bts MAIS e MENOS-----*/
+		
 		/*estilizando os selects*/
 		if (!$j.browser.opera) {
     
@@ -16,8 +39,7 @@ $j(document).ready(function(){
 						})
 			});
 
-		};
-		
+		};		
 		
 		/*---SLIDER-----*/
 		$j(function(){
@@ -98,9 +120,9 @@ $j(document).ready(function(){
 		};
 		mesmaAlturaJA('#legisla-left','#legisla-right');
 		
-});
+});	
 
-/*---MENU-----*/
+	/*---MENU-----*/
 		$j("#nav-topo ul li").each(function() {
  
         var el = $('#' + $(this).attr('id') + ' ul:eq(0)'); 
