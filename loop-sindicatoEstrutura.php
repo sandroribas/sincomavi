@@ -4,7 +4,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); //resumindo, se exist
 <div class="cols">
 	<div class="img-post"><a href="<?php the_permalink();?>"><?php the_post_thumbnail('post-thumbnails'); ?></a></div>
     <!--<div class="titulopg"><h1 class="titulo-pg"><?php //the_title();?></h1></div>fim do titulopg-->
-    <a href="<?php the_permalink();?>"><?php the_excerpt(); ?></a>
+    <?php the_excerpt(); ?>
     <!--<span class="divisor-cinza"></span>-->
     <!--<a class="bt-noticias-home" href="<?php //the_permalink(); ?>" title="<?php //the_title_attribute(); ?>"><?php //the_title(); ?></a>-->
 </div><!--fim dos post-sindicato-->                   

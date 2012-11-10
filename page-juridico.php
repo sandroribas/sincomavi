@@ -23,7 +23,7 @@ Template Name: Jurídco
                 <div class="img-left-topojur">
                     <div class="leg-topoJur">
                         <h1><?php _e('Jurídico','sincomavi'); ?></h1>
-                        <p><?php _e('É um fato conhecido de todos que um leitor se distrairá com o conteúdo djdifdi edjijifmdokd', 'sincomavi'); ?>
+                        <p><?php _e('É um fato conhecido de todos que um leitor se distrairá com o conteúdo djdifdi edjijifmdokd', 'sincomavi'); ?></p>
                     </div><!--fim da leg-topJur-->
                 </div><!--fim da img-left-topojur-->
                 
@@ -31,7 +31,7 @@ Template Name: Jurídco
                 
                 	<div class="form-azul">
                     	
-                        <form class="formulario-arq" name="jump5">
+                        <form action="#" class="formulario-arq" name="jump5">
                            <div class="div-form">
                            	<h2><span class="bordas-tituloAzul"><?php _e('RESENHA TRIBUTÁRIA','sincomavi');?></span></h2>
 							<p><?php _e('As edições anteriores da Resenha Tributária podem ser acessadas no menu abaixo.','sincomavi'); ?></p>
@@ -73,7 +73,7 @@ Template Name: Jurídco
         		<div id="legisla-right">
                    
                     <div class="form-cinza">
-                        <form class="formulario-arq" name="jump">
+                        <form action="#" class="formulario-arq" name="jump">
                            <div class="div-form">
                            		<h2><span class="bordas-tituloCinza"><?php _e('CONSULTE','sincomavi');?></span></h2>
 								<p><?php _e('Neste menu o interessado tem a seu dispor as convenções coletivas celebradas em 2007.','sincomavi'); ?></p>
@@ -93,7 +93,7 @@ Template Name: Jurídco
                     </div>
                 	
                     <div class="form-cinza">
-                        <form class="formulario-arq" name="jump2">
+                        <form action="#" class="formulario-arq" name="jump2">
                            <div class="div-form">
                            		<h2><span class="bordas-tituloCinza"><?php _e('CONVENÇÕES 2007','sincomavi');?></span></h2>
 								<p><?php _e('Neste menu o interessado tem a seu dispor as convenções coletivas celebradas em 2007.','sincomavi'); ?></p>
@@ -113,7 +113,7 @@ Template Name: Jurídco
                     </div>
                     
                     <div class="form-cinza2">
-                        <form class="formulario-arq" name="jump3">
+                        <form action="#" class="formulario-arq" name="jump3">
                            <div class="div-form">
                            		<h2><span class="bordas-tituloCinza"><?php _e('guia on line de contribuição','sincomavi');?></span></h2>
 								<p><?php _e('Neste menu o interessado tem a seu dispor as convenções coletivas celebradas em 2007.','sincomavi'); ?></p>
@@ -133,7 +133,7 @@ Template Name: Jurídco
                     </div>
                     
                     <div class="form-cinza2">
-                        <form class="formulario-arq" name="jump4">
+                        <form action="#" class="formulario-arq" name="jump4">
                            <div class="div-form">
                            		<h2><span class="bordas-tituloCinza"><?php _e('CONSULTE OS DOCUMENTOS','sincomavi');?></span></h2>
 								<p><?php _e('Neste menu o interessado tem a seu dispor as convenções coletivas celebradas em 2007.','sincomavi'); ?></p>

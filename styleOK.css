@@ -36,14 +36,14 @@ body{width:100%; height:auto; background:#656565;}
 	#nav-topo li { float: left; overflow:hidden; padding: 0px 0px; margin:0; width: 16.53%/*19.876%*/; height:167px; text-align:center; border-left:1px solid #eee }
 	#nav-topo li:first-child, li:last-child{ border-left:none;}
 	
-	#nav-topo li#menu-item-94 a { display:block; padding:0px 0px; height:167px; width: 100%; text-decoration:none; overflow:hidden; background:url(img/bt0-menu.jpg) repeat 0 0; margin: 0px; padding: 0px; }
-	#nav-topo li#menu-item-177 a { display:block; padding:0px 0px; height:167px; width: 100%; text-decoration:none; overflow:hidden; background:url(img/bt1-menu.jpg) repeat 0 0; margin: 0px; padding: 0px; }
+	#nav-topo li#menu-item-1769 a { display:block; padding:0px 0px; height:167px; width: 100%; text-decoration:none; overflow:hidden; background:url(img/bt0-menu.jpg) repeat 0 0; margin: 0px; padding: 0px; }
+	#nav-topo li#menu-item-1770 a { display:block; padding:0px 0px; height:167px; width: 100%; text-decoration:none; overflow:hidden; background:url(img/bt1-menu.jpg) repeat 0 0; margin: 0px; padding: 0px; }
 	
-	#nav-topo li#menu-item-90 a { display:block; padding:0px 0px; height:167px; width: 100%; text-decoration:none; overflow:hidden; background:url(img/bt2-menu.jpg) repeat 0 0; margin: 0px; padding: 0px; }
+	#nav-topo li#menu-item-1765 a { display:block; padding:0px 0px; height:167px; width: 100%; text-decoration:none; overflow:hidden; background:url(img/bt2-menu.jpg) repeat 0 0; margin: 0px; padding: 0px; }
 	
-	#nav-topo li#menu-item-91 a { display:block; padding:0px 0px; height:167px; width: 100%; text-decoration:none; overflow:hidden; background:url(img/bt3-menu.jpg) repeat 0 0; margin: 0px; padding: 0px; }
-	#nav-topo li#menu-item-92 a { display:block; padding:0px 0px; height:167px; width: 100%; text-decoration:none; overflow:hidden; background:url(img/bt4-menu.jpg) repeat 0 0; margin: 0px; padding: 0px; }
-	#nav-topo li#menu-item-93 a { display:block; padding:0px 0px; height:167px; width: 100%; text-decoration:none; overflow:hidden; background:url(img/bt5-menu.jpg) repeat 0 0; margin: 0px; padding: 0px; }
+	#nav-topo li#menu-item-1766 a { display:block; padding:0px 0px; height:167px; width: 100%; text-decoration:none; overflow:hidden; background:url(img/bt3-menu.jpg) repeat 0 0; margin: 0px; padding: 0px; }
+	#nav-topo li#menu-item-1767 a { display:block; padding:0px 0px; height:167px; width: 100%; text-decoration:none; overflow:hidden; background:url(img/bt4-menu.jpg) repeat 0 0; margin: 0px; padding: 0px; }
+	#nav-topo li#menu-item-1768 a { display:block; padding:0px 0px; height:167px; width: 100%; text-decoration:none; overflow:hidden; background:url(img/bt5-menu.jpg) repeat 0 0; margin: 0px; padding: 0px; }
 	
 	#nav-topo li strong{ display:block; padding-top: 100px; text-decoration:none; font-family: 'Open Sans', sans-serif; font-weight:400; font-size:14px; color:#7f7f7f; width:100%; height:167px;}
 	#nav-topo li span{ display:none; /* font-size: 10px;*/}
@@ -224,7 +224,7 @@ padding-left:2px; }
 #topo-juridico .img-left-topojur .leg-topoJur h1{ color:#FFF; font-family: 'Open Sans', sans-serif; font-weight:400; font-size:37px; text-align:left;}
 #topo-juridico .img-left-topojur .leg-topoJur p{ color:#FFF; font-family: 'Open Sans', sans-serif; font-weight:400; font-size:12px; text-align:left;}
 
-.img-right-topojur{ display:block; width:29.5%; height:186px; float:left; background:url(img/banner-juridico2.jpg) no-repeat 5px 0px; }
+.img-right-topojur{ display:block; width:29.5%; height:186px; float:left; background:url(img/banner-juridico2.jpg) no-repeat 5px 0px;}
 .form-azul{ width:243px; height: 186px; margin-top:0px; margin-left:5.5px;}
 .form-azul .formulario-arq{ width:240px; height:24px; padding-top:0px; padding-left:20px; padding-right: 20px;}
 div.form-azul h2{ color:#CCC; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:18px; text-align: justify; padding-top:25px; }
@@ -246,21 +246,21 @@ div.form-azul .formularioAzul{}
 #destaques-juridico div h1 span.linha-titulo{ width: 90%; padding-bottom: 5px; border-bottom: 1px solid #CCC; padding-left:1px; margin-right: 20px; display:block}
 
 /*BOTÕES----------------*/
-.post-246 .linha-titulo, .post-246 strong{ color:#a14b2b;}
-.post-246 .bt-dest-juridico{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#a14b2b; padding: 5px 10px; text-decoration:none; margin-left: 10px; /*opacity:1; -webkit-opacity:1;*/ opacity:1; -webkit-opacity:1;-webkit-transition: all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; 	transition: all 500ms linear;}
-.post-246 .bt-dest-juridico:hover{ /*-webkit-opacity:0.5; opacity:.5;*/ opacity:0.7; -webkit-opacity:0.7; -webkit-transition:	all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; transition: all 500ms linear;}
+.post-1806 .linha-titulo, .post-1806 strong{ color:#a14b2b;}
+.post-1806 .bt-dest-juridico{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#a14b2b; padding: 5px 10px; text-decoration:none; margin-left: 10px; /*opacity:1; -webkit-opacity:1;*/ opacity:1; -webkit-opacity:1;-webkit-transition: all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; 	transition: all 500ms linear;}
+.post-1806 .bt-dest-juridico:hover{ /*-webkit-opacity:0.5; opacity:.5;*/ opacity:0.7; -webkit-opacity:0.7; -webkit-transition:	all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; transition: all 500ms linear;}
 
-.post-244 .linha-titulo, .post-244 strong{ color:#574b43;}
-.post-244 .bt-dest-juridico{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#574b43; padding: 5px 10px; text-decoration:none; margin-left: 10px; opacity:1; -webkit-opacity:1;-webkit-transition: all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; 	transition: all 500ms linear;}
-.post-244 .bt-dest-juridico:hover{ opacity:0.7; -webkit-opacity:0.7; -webkit-transition:	all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; transition: all 500ms linear;}
+.post-1803 .linha-titulo, .post-1803 strong{ color:#574b43;}
+.post-1803 .bt-dest-juridico{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#574b43; padding: 5px 10px; text-decoration:none; margin-left: 10px; opacity:1; -webkit-opacity:1;-webkit-transition: all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; 	transition: all 500ms linear;}
+.post-1803 .bt-dest-juridico:hover{ opacity:0.7; -webkit-opacity:0.7; -webkit-transition:	all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; transition: all 500ms linear;}
 
-.post-242 .linha-titulo, .post-242 strong{ color:#cdaf2e;}
-.post-242 .bt-dest-juridico{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#cdaf2e; padding: 5px 10px; text-decoration:none; margin-left: 10px; opacity:1; -webkit-opacity:1;-webkit-transition: all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; 	transition: all 500ms linear;}
-.post-242 .bt-dest-juridico:hover{opacity:0.7; -webkit-opacity:0.7; -webkit-transition:	all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; transition: all 500ms linear;}
+.post-1800 .linha-titulo, .post-1800 strong{ color:#cdaf2e;}
+.post-1800 .bt-dest-juridico{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#cdaf2e; padding: 5px 10px; text-decoration:none; margin-left: 10px; opacity:1; -webkit-opacity:1;-webkit-transition: all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; 	transition: all 500ms linear;}
+.post-1800 .bt-dest-juridico:hover{opacity:0.7; -webkit-opacity:0.7; -webkit-transition:	all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; transition: all 500ms linear;}
 
-.post-240 .linha-titulo, .post-240 strong{ color:#637b1e;}
-.post-240 .bt-dest-juridico{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#637b1e; padding: 5px 10px; text-decoration:none; margin-left: 10px; opacity:1; -webkit-opacity:1;-webkit-transition: all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; 	transition: all 500ms linear;}
-.post-240 .bt-dest-juridico:hover{opacity:0.7; -webkit-opacity:0.7; -webkit-transition:	all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; transition: all 500ms linear;}
+.post-1796 .linha-titulo, .post-1796 strong{ color:#637b1e;}
+.post-1796 .bt-dest-juridico{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#637b1e; padding: 5px 10px; text-decoration:none; margin-left: 10px; opacity:1; -webkit-opacity:1;-webkit-transition: all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; 	transition: all 500ms linear;}
+.post-1796 .bt-dest-juridico:hover{opacity:0.7; -webkit-opacity:0.7; -webkit-transition:	all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; transition: all 500ms linear;}
 /*FIM DOS BOTÕES----------------*/
 
 #conteudo #conteudo-juridico{ height: auto; width:100%; display:block; float: left; overflow:hidden; padding-bottom:20px;}
@@ -280,10 +280,10 @@ div.form-azul .formularioAzul{}
 #conteudo #conteudo-juridico .post .bt-dest-juridico{ margin-left:10px; }
 
 
-.post-266 .linha-titulo2, .post-266 span{ color:#A14B2B;}
-.post-264 .linha-titulo2, .post-264 span{ color:#574B43;}
-.post-262 .linha-titulo2, .post-262 span{ color:#CDAF2E;}
-.post-260 .linha-titulo2, .post-260 span{ color:#637b1e;}
+.post-1818 .linha-titulo2, .post-1818 span{ color:#A14B2B;}
+.post-1815 .linha-titulo2, .post-1815 span{ color:#574B43;}
+.post-1812 .linha-titulo2, .post-1812 span{ color:#CDAF2E;}
+.post-1809 .linha-titulo2, .post-1809 span{ color:#637b1e;}
 
 #legisla-right{ display:block; height:auto; width:260px; float:left;}
 .form-cinza{ width:240px; height: 138px; background:#7f7f7f; margin-top:30px;}
@@ -310,21 +310,21 @@ div.form-cinza2 p{ color:#CCC; font-family: 'Open Sans', sans-serif; font-weight
 
 #conteudo #conteudo-juridico .post:last-child{ border-bottom:none;}
 /*BOTÕES----------------*/
-#conteudo #conteudo-juridico .post-266 .linha-titulo, .post-266 strong{ color:#a14b2b;}
-#conteudo #conteudo-juridico .post-266 .bt-dest-juridico2{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#a14b2b; padding: 5px 10px; text-decoration:none; margin-left: 10px; /*opacity:1; -webkit-opacity:1;*/ opacity:1; -webkit-opacity:1;-webkit-transition: all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; 	transition: all 500ms linear;}
-#conteudo #conteudo-juridico .post-266 .bt-dest-juridico2:hover{ /*-webkit-opacity:0.5; opacity:.5;*/ opacity:0.7; -webkit-opacity:0.7; -webkit-transition:	all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; transition: all 500ms linear;}
+#conteudo #conteudo-juridico .post-1818 .linha-titulo, .post-1818 strong{ color:#a14b2b;}
+#conteudo #conteudo-juridico .post-1818 .bt-dest-juridico2{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#a14b2b; padding: 5px 10px; text-decoration:none; margin-left: 10px; /*opacity:1; -webkit-opacity:1;*/ opacity:1; -webkit-opacity:1;-webkit-transition: all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; 	transition: all 500ms linear;}
+#conteudo #conteudo-juridico .post-1818 .bt-dest-juridico2:hover{ /*-webkit-opacity:0.5; opacity:.5;*/ opacity:0.7; -webkit-opacity:0.7; -webkit-transition:	all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; transition: all 500ms linear;}
 
-.post-264 .linha-titulo, .post-264 strong{ color:#574b43;}
-.post-264 .bt-dest-juridico2{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#574b43; padding: 5px 10px; text-decoration:none; margin-left: 10px; opacity:1; -webkit-opacity:1;-webkit-transition: all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; 	transition: all 500ms linear;}
-.post-264 .bt-dest-juridico2:hover{ opacity:0.7; -webkit-opacity:0.7; -webkit-transition:	all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; transition: all 500ms linear;}
+.post-1815 .linha-titulo, .post-1815 strong{ color:#574b43;}
+.post-1815 .bt-dest-juridico2{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#574b43; padding: 5px 10px; text-decoration:none; margin-left: 10px; opacity:1; -webkit-opacity:1;-webkit-transition: all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; 	transition: all 500ms linear;}
+.post-1815 .bt-dest-juridico2:hover{ opacity:0.7; -webkit-opacity:0.7; -webkit-transition:	all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; transition: all 500ms linear;}
 
-.post-262 .linha-titulo, .post-262 strong{ color:#cdaf2e;}
-.post-262 .bt-dest-juridico2{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#cdaf2e; padding: 5px 10px; text-decoration:none; margin-left: 10px; opacity:1; -webkit-opacity:1;-webkit-transition: all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; 	transition: all 500ms linear;}
-.post-262 .bt-dest-juridico2:hover{opacity:0.7; -webkit-opacity:0.7; -webkit-transition:	all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; transition: all 500ms linear;}
+.post-1812 .linha-titulo, .post-1812 strong{ color:#cdaf2e;}
+.post-1812 .bt-dest-juridico2{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#cdaf2e; padding: 5px 10px; text-decoration:none; margin-left: 10px; opacity:1; -webkit-opacity:1;-webkit-transition: all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; 	transition: all 500ms linear;}
+.post-1812 .bt-dest-juridico2:hover{opacity:0.7; -webkit-opacity:0.7; -webkit-transition:	all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; transition: all 500ms linear;}
 
-.post-260 .linha-titulo, .post-260 strong{ color:#637b1e;}
-.post-260 .bt-dest-juridico2{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#637b1e; padding: 5px 10px; text-decoration:none; margin-left: 10px; opacity:1; -webkit-opacity:1;-webkit-transition: all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; 	transition: all 500ms linear;}
-.post-260 .bt-dest-juridico2:hover{opacity:0.7; -webkit-opacity:0.7; -webkit-transition:	all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; transition: all 500ms linear;}
+.post-1809 .linha-titulo, .post-1809 strong{ color:#637b1e;}
+.post-1809 .bt-dest-juridico2{ color:#ffffff; font-family: 'Open Sans', sans-serif; font-weight:700; font-size:13px; text-align:left; background:#637b1e; padding: 5px 10px; text-decoration:none; margin-left: 10px; opacity:1; -webkit-opacity:1;-webkit-transition: all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; 	transition: all 500ms linear;}
+.post-1809 .bt-dest-juridico2:hover{opacity:0.7; -webkit-opacity:0.7; -webkit-transition:	all 500ms linear; -moz-transition: all 500ms linear; -o-transition: all 500ms linear; transition: all 500ms linear;}
 /*FIM DOS BOTÕES----------------*/
 
 
@@ -369,7 +369,7 @@ div.form-cinza2 p{ color:#CCC; font-family: 'Open Sans', sans-serif; font-weight
 .titulos3{ color:#3b6e8f; font-family: 'Open Sans', sans-serif; font-weight:400; font-size: 24px; text-decoration:none; margin: 5px 10px 20px 10px;}
 .divisor-cinza{ background:#cccccc; width:80%; height:1px; display:block; margin-left:10px; margin-top: 10px; margin-bottom:10px;}
 .divisor-azul{ background: #9DB6C7; width:80%; height:1px; display:block; margin-left:10px; margin-top: 15px; margin-bottom:15px;}
-.linha-titulo{ width:100%; height:auto; padding-bottom:-15px; border-bottom: 1px solid #cccccc; }
+.linha-titulo{ width:100%; height:auto; padding-bottom:0px; border-bottom: 1px solid #cccccc; }
 
 #titulopg{ width: 615px; height: auto; float:left}
 .titulo-pg{ font-size:20px; line-height: 29.5px; font-weight:700; font-family: 'Open Sans', sans-serif; color:#FFF; margin-left: /*23*/0px; padding-left: 23px; vertical-align:central; background:url(img/bg_titulo-home.jpg) repeat-x 0 0; width: 95%; height:29.5px; margin-top: 0px; margin-right: 20px; padding-bottom: 15px; display:block; text-transform:uppercase;}
