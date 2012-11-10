@@ -1,4 +1,4 @@
-	var $j = jQuery.noConflict();	
+var $j = jQuery.noConflict();	
 $j(document).ready(function(){
 		/*estilizando os selects*/
 		if (!$j.browser.opera) {
