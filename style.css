@@ -211,8 +211,10 @@ padding-left:2px; }
 #diretoria div ul{ margin-left:0px; margin-bottom:15px; margin-top:0px; height:auto; width:250px;}
 #diretoria div li{ list-style:url(img/li-diretoria.png);  color:#FFF; font-family: 'Open Sans', sans-serif; font-weight:300; font-size:11px; margin-left:25px; margin-right: 10px; margin-bottom:0px; margin-top:0px;}
 #diretoria div li strong{ color:#FFF; font-family: 'Open Sans', sans-serif; font-weight:600; font-size:11px;}
-
-
+/*---anuncio-revista-----*/
+.anuncio-revista{ background: #3B6E8F; height:391px; width:250px; display:block; float:left; margin-left:22px; margin-top:37px;}
+.anuncio-revista a{ height:391px; width:250px;}
+.anuncio-revista img{height:391px; width:250px;}
 
 /*---CONTEUDO-juridico-------------------------------------------------------------------------------------------------------------------------------------------*/
 

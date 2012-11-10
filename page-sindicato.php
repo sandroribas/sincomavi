@@ -45,8 +45,11 @@ Template Name: Sindicato
 							<?php endwhile;?>
                          <a href="#" class="bt-menos"></a>
                     </div><!--fim da div-dir2-->
-                    
                 </div><!--dim da DIRETORIA-->
+                
+                <div class="anuncio-revista">
+                	<a href="#" title=""><img src="<?php bloginfo('template_directory'); ?>/img/anuncio-revistas.jpg" alt="Veja todas edições." /></a>
+                </div>
             </div><!--fim da lateral-sindicato-->
             
             <div id="estrutura">
