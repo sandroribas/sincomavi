@@ -1,5 +1,24 @@
-var $j = jQuery.noConflict();
+	var $j = jQuery.noConflict();	
 $j(document).ready(function(){
+		/*estilizando os selects*/
+		if (!$j.browser.opera) {
+    
+			// select element styling
+			$j('select.select').each(function(){
+				var title = $j(this).attr('title');
+				if( $j('option:selected', this).val() != ''  ) title = $j('option:selected',this).text();
+				$j(this)
+					.css({'z-index':10,'opacity':0,'-khtml-appearance':'none'})
+					.after('<span class="select-span">' + title + '</span>')
+					.change(function(){
+						val = $j('option:selected',this).text();
+						$j(this).next().text(val);
+						})
+			});
+
+		};
+		
+		
 		/*---SLIDER-----*/
 		$j(function(){
 			$j('#slider-topo').slides({
@@ -33,7 +52,7 @@ $j(document).ready(function(){
 				}
 			});
 		});
-		/*---FIM DO SLIDER-----*/
+		/*---FIM DO SLIDER-----*/	
 		
 		//Faux columns 1
 		function mesmaAltura(noticiasJS, anunciosJS){
@@ -67,6 +86,17 @@ $j(document).ready(function(){
 			$j(anunciosJA).height(maiorAlturaJA);
 		};
 		mesmaAlturaJA('#conteudo-sindicato','#lateral-sindicato1');
+		
+		//Faux columns 3
+		function mesmaAlturaJU(noticiasJU, anunciosJU){
+			noticiasJUAltura = $j(noticiasJU).height();
+			anunciosJUAltura = $j(anunciosJU).height();
+			maiorAlturaJU = Math.max(noticiasJUAltura, anunciosJUAltura);
+			
+			$j(noticiasJU).height(maiorAlturaJU);
+			$j(anunciosJU).height(maiorAlturaJU);
+		};
+		mesmaAlturaJA('#legisla-left','#legisla-right');
 		
 });
 

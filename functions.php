@@ -286,6 +286,24 @@ add_action('manage_posts_custom_column', 'ST4_columns_content', 10, 2);
 		'before_title'=>'<h1 class="especial2">',
 		'after_title'=>'</h1>',));
 		
+		register_sidebar(array('name'=>'Lateral Legisla A',
+		'name' => __( 'Lateral Legisla A' ),
+		'id'=>'lateral-legislal-a',
+		'description' => __( 'Inclua Widgets na Lateral Legisla A.' ),
+		'before_widget'=>'<div>',
+		'after_widget'=>'</div>',
+		'before_title'=>'',
+		'after_title'=>'',));
+		
+		register_sidebar(array('name'=>'Lateral Legisla B',
+		'name' => __( 'Lateral Legisla B' ),
+		'id'=>'lateral-legislal-b',
+		'description' => __( 'Inclua Widgets na Lateral Legisla B.' ),
+		'before_widget'=>'<div>',
+		'after_widget'=>'</div>',
+		'before_title'=>'',
+		'after_title'=>'',));
+		
 		//as sidebars auxiliares ainda estão sem uso
 		register_sidebar(array('name'=>'Sidebar 1',
 		'name' => __( 'Sidebar 1' ),

@@ -9,8 +9,11 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); //resumindo, se exist
     <div class="conteudo-legisla">
         <h1 class="titulos5"><span class="linha-titulo2"><?php the_title();?></span></h1>
         <?php the_excerpt(); ?> 
-        <a class="bt-dest-juridico2" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php _e('VEJA MAIS','sincomavi');?></a>
+        <a class="bt-dest-juridico" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php _e('VEJA MAIS','sincomavi');?></a>
     </div><!--fim do conteudo-legisla-->
+    
+    <div class="lat-legisla">
+    </div>
     
 </div><!--fim dos dest-home-->                   
 <?php endwhile; else: //se não existirem posts, mostre a mensagem abaixo?>
