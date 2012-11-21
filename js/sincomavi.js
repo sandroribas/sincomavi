@@ -1,6 +1,43 @@
 var $j = jQuery.noConflict();	
 $j(document).ready(function(){
 		
+		//---Início das tabs-----
+				$j('#container-contForms ul.tabs').each(function(){
+					// For each set of tabs, we want to keep track of
+					// which tab is active and it's associated content
+					var $jactive, $jcontent, $jlinks = $j(this).find('a');
+
+					// If the location.hash matches one of the links, use that as the active tab.
+					// If no match is found, use the first link as the initial active tab.
+					$jactive = $j($jlinks.filter('[href="'+location.hash+'"]')[0] || $jlinks[0]);
+					$jactive.addClass('active');
+					$jcontent = $j($jactive.attr('href'));
+
+					// Hide the remaining content
+					$jlinks.not($jactive).each(function () {
+						$j($j(this).attr('href')).hide();
+					});
+
+					// Bind the click event handler
+					$j(this).on('click', 'a', function(e){
+						// Make the old tab inactive.
+						$jactive.removeClass('active');
+						$jcontent.hide();
+
+						// Update the variables with the new link and content
+						$jactive = $j(this);
+						$jcontent = $j($j(this).attr('href'));
+
+						// Make the tab active.
+						$jactive.addClass('active');
+						$jcontent.show();
+
+						// Prevent the anchor's default click action
+						e.preventDefault();
+					});
+				});
+				//---Fim das tabs-----
+				
 		/*---bts MAIS e MENOS-----*/
 		$j('.bt-mais').hover(function(){
 			$j('.bt-mais').animate({ 'opacity':'0.5' }, 500);

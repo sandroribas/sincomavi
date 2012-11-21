@@ -1,5 +1,7 @@
 <?php
 //load_theme_textdomain('sincomavi', get_template_directory() . '/languages');
+//remover a tag p dos excerpts e contents
+//remove_filter('the_excerpt', 'wpautop');
 
 if(! isset($content_width)) $content_width = 650;
 
@@ -286,6 +288,15 @@ add_action('manage_posts_custom_column', 'ST4_columns_content', 10, 2);
 		'before_title'=>'<h1 class="especial2">',
 		'after_title'=>'</h1>',));
 		
+		register_sidebar(array('name'=>'Anuncios Serviços',
+		'name' => __( 'Anuncios Serviços' ),
+		'id'=>'anuncios-b',
+		'description' => __( 'Inclua Widgets na Lateral Serviços.' ),
+		'before_widget'=>'<div>',
+		'after_widget'=>'</div>',
+		'before_title'=>'<h1>',
+		'after_title'=>'</h1>',));
+		
 		register_sidebar(array('name'=>'Lateral Legisla A',
 		'name' => __( 'Lateral Legisla A' ),
 		'id'=>'lateral-legislal-a',
@@ -412,6 +423,28 @@ function the_post_thumbnail_caption() {
   }
 }
 
-//TWITTER
-
+//PAGINAÇÃO
+function paginate() {
+	global $wp_query, $wp_rewrite;
+	$wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
+	
+	$pagination = array(
+		'base' => @add_query_arg('page','%#%'),
+		'format' => '',
+		'total' => $wp_query->max_num_pages,
+		'current' => $current,
+		'show_all' => true,
+		'type' => 'list',
+		'next_text' => '&raquo;',
+		'prev_text' => '&laquo;'
+		);
+	
+	if( $wp_rewrite->using_permalinks() )
+		$pagination['base'] = user_trailingslashit( trailingslashit( remove_query_arg( 's', get_pagenum_link( 1 ) ) ) . 'page/%#%/', 'paged' );
+	
+	if( !empty($wp_query->query_vars['s']) )
+		$pagination['add_args'] = array( 's' => get_query_var( 's' ) );
+	
+	echo paginate_links( $pagination );
+}
 ?>
