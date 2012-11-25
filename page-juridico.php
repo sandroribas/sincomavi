@@ -54,7 +54,7 @@ Template Name: Jurídco
             
             <div id="titulo-busca">
                 <div id="tituloh">
-                <h1 class="titulo-home"><?php _e('DESTAQUES','sincomavi')?></h1>
+                <h1 class="titulo-juridico"><?php _e('DESTAQUES','sincomavi')?></h1>
             	</div><!--fim do tituloh-->
                 <?php get_search_form('minha_busca'); ?><!--fim da busca-->
             </div>
@@ -64,7 +64,7 @@ Template Name: Jurídco
     		</div><!--fim dos destaques-home-->
 
     		<div id="conteudo-juridico">
-        		<h1 class="titulo-total"><?php _e('LEGISLAÇÃO','sincomavi')?></h1>
+        		<h1 class="titulo-total-juridico"><?php _e('LEGISLAÇÃO','sincomavi')?></h1>
 
                 <div id="legisla-left">
                 	<?php get_template_part('loop', 'legislaJuridico');?>

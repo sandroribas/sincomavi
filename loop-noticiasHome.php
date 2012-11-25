@@ -1,5 +1,5 @@
 <?php
-query_posts('category_name=noticias&showposts=6');
+query_posts('category_name=noticias-home&showposts=6');
 if ( have_posts() ) : while ( have_posts() ) : the_post(); //resumindo, se existrem posts, mostre-os?>
 <div class="noticia-home">
 	<a class="todos-links" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('post-thumbnails'); ?></a>

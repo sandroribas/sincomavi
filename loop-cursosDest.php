@@ -10,8 +10,8 @@ $nomeBtn = get_post_meta($post->ID, 'nome_botao', true);//pegando campo personal
 	<?php the_post_thumbnail('post-thumbnails'); ?>
     <div class="titulo-destaquesServ"><h1><?php the_title();?></h1></div><!--fim do titulopg-->
     <div class="clear"></div>
-    <?php the_content(); ?> 
-    <a class="bt-dest-marrom2" href="<?php echo $linkBtn;?>" title="<?php echo $nomeBnt; ?>"><?php echo $nomeBtn; ?></a>
+    <?php the_excerpt(); ?> 
+    <a class="bt-dest-marrom2" href="<?php echo $linkBtn; ?>" title="<?php echo $nomeBtn; ?>"><?php echo $nomeBtn; ?></a>
     <!--<a class="bt-noticias-home" href="<?php //the_permalink(); ?>" title="<?php //the_title_attribute(); ?>"><?php //the_title(); ?></a>-->
 </div><!--fim do post-->                   
 <?php endwhile; else: //se não existirem posts, mostre a mensagem abaixo?>

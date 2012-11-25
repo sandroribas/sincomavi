@@ -1,5 +1,5 @@
 <?php
-query_posts('category_name=convenios&showposts=6');
+//query_posts('category_name=convenios&showposts=6');
 if ( have_posts() ) : while ( have_posts() ) : the_post(); //resumindo, se existrem posts, mostre-os?>
 <div class="convenioDest">
 	<?php the_post_thumbnail('post-thumbnails'); ?>
@@ -10,7 +10,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); //resumindo, se exist
     <!--<a class="bt-noticias-home" href="<?php //the_permalink(); ?>" title="<?php //the_title_attribute(); ?>"><?php //the_title(); ?></a>-->
 </div><!--fim do post-->                   
 <?php endwhile;?> 
-	<?php //if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
+	<?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
     
 <?php else: //se não existirem posts, mostre a mensagem abaixo?>
 	<h2><?php _e('Ops...', 'sincomavi'); ?></h2>

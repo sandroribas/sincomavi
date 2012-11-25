@@ -270,24 +270,6 @@ add_action('manage_posts_custom_column', 'ST4_columns_content', 10, 2);
 		'before_title'=>'<h1>',
 		'after_title'=>'</h1>',));
 		
-		register_sidebar(array('name'=>'Anuncios A',
-		'name' => __( 'Anuncios A' ),
-		'id'=>'anuncios-a',
-		'description' => __( 'Inclua Widgets na Anuncios A.' ),
-		'before_widget'=>'<div>',
-		'after_widget'=>'</div>',
-		'before_title'=>'<h1>',
-		'after_title'=>'</h1>',));
-		
-		register_sidebar(array('name'=>'Anuncios B',
-		'name' => __( 'Anuncios B' ),
-		'id'=>'anuncios-b',
-		'description' => __( 'Inclua Widgets na Lateral Home A.' ),
-		'before_widget'=>'<div>',
-		'after_widget'=>'</div>',
-		'before_title'=>'<h1 class="especial2">',
-		'after_title'=>'</h1>',));
-		
 		register_sidebar(array('name'=>'Anuncios Serviços',
 		'name' => __( 'Anuncios Serviços' ),
 		'id'=>'anuncios-b',
@@ -297,10 +279,10 @@ add_action('manage_posts_custom_column', 'ST4_columns_content', 10, 2);
 		'before_title'=>'<h1>',
 		'after_title'=>'</h1>',));
 		
-		register_sidebar(array('name'=>'Lateral Legisla A',
-		'name' => __( 'Lateral Legisla A' ),
-		'id'=>'lateral-legislal-a',
-		'description' => __( 'Inclua Widgets na Lateral Legisla A.' ),
+		register_sidebar(array('name'=>'Lateral Noticias',
+		'name' => __( 'Lateral Noticias' ),
+		'id'=>'lateral-noticias',
+		'description' => __( 'Inclua Widgets na Lateral Noticias.' ),
 		'before_widget'=>'<div>',
 		'after_widget'=>'</div>',
 		'before_title'=>'',
@@ -424,27 +406,64 @@ function the_post_thumbnail_caption() {
 }
 
 //PAGINAÇÃO
-function paginate() {
-	global $wp_query, $wp_rewrite;
-	$wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
-	
-	$pagination = array(
-		'base' => @add_query_arg('page','%#%'),
-		'format' => '',
-		'total' => $wp_query->max_num_pages,
-		'current' => $current,
-		'show_all' => true,
-		'type' => 'list',
-		'next_text' => '&raquo;',
-		'prev_text' => '&laquo;'
-		);
-	
-	if( $wp_rewrite->using_permalinks() )
-		$pagination['base'] = user_trailingslashit( trailingslashit( remove_query_arg( 's', get_pagenum_link( 1 ) ) ) . 'page/%#%/', 'paged' );
-	
-	if( !empty($wp_query->query_vars['s']) )
-		$pagination['add_args'] = array( 's' => get_query_var( 's' ) );
-	
-	echo paginate_links( $pagination );
+function kriesi_pagination($pages = '', $range = 2)
+{  
+     $showitems = ($range * 2)+1;  
+
+     global $paged;
+     if(empty($paged)) $paged = 1;
+
+     if($pages == '')
+     {
+         global $wp_query;
+         $pages = $wp_query->max_num_pages;
+         if(!$pages)
+         {
+             $pages = 1;
+         }
+     }   
+
+     if(1 != $pages)
+     {
+         echo "<div class='pagination'>";
+         if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo;</a>";
+         if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a>";
+
+         for ($i=1; $i <= $pages; $i++)
+         {
+             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
+             {
+                 echo ($paged == $i)? "<span class='current'>".$i."</span>":"<a href='".get_pagenum_link($i)."' class='inactive' >".$i."</a>";
+             }
+         }
+
+         if ($paged < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($paged + 1)."'>&rsaquo;</a>";  
+         if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>&raquo;</a>";
+         echo "</div>\n";
+     }
+}
+
+//breadcrumb function
+function the_breadcrumb() {
+	if (!is_home()) {
+		//echo '<a href="';
+		//echo get_option('home');
+		//echo '">';
+		//bloginfo('name');
+		//echo "</a>" ; 
+		//echo " > " ;
+		
+		
+		foreach((get_the_category()) as $category) { echo '<span class="bread">' . $category->cat_name . '</span>'; } 
+		echo '<span class="maior"> > </span> ';
+		
+		echo '<a href="';
+		echo the_permalink();;
+		echo '"><span class="bread">';
+		 the_title();
+		 echo "</span></a>" ;
+		 
+		
+	}
 }
 ?>

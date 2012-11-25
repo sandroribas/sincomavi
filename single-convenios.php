@@ -15,8 +15,8 @@
 
 <div id="conteudo">
     		<div id="conteudo-sindicato">
-        		Single LEGISLAÇÃO!
-                <?php get_template_part('loop', 'singleLegisla');?>
+        		Single CONVÊNIOS!
+                <?php get_template_part('loop', 'index');?>
                	
         	</div><!--fim do conteudo-sindicato-->
             

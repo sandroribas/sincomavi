@@ -48,7 +48,7 @@ Template Name: Sindicato
                 </div><!--dim da DIRETORIA-->
                 
                 <div class="anuncio-revista">
-                	<a href="#" title=""><img src="<?php bloginfo('template_directory'); ?>/img/anuncio-revistas.jpg" alt="Veja todas edições." /></a>
+                	<a href="http://www.twobrasil.com/wordpress/cat/revistas/" target="_blank" title=""><img src="<?php bloginfo('template_directory'); ?>/img/anuncio-revistas.jpg" alt="Veja todas edições." /></a>
                 </div>
             </div><!--fim da lateral-sindicato-->
             
