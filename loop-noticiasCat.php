@@ -12,8 +12,16 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); //resumindo, se exist
     
 </div><!--fim do post-->                  
 <?php endwhile;?> 
-	<?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
-    
+	<!--PAGENAVI-->
+    <?php //posts_nav_link('&harr;','&lt; Previous Posts','Older Posts &gt;'); ?>
+	<?php //if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
+    <?php if(function_exists('wp_pagenavi2')) { ?>
+	<?php wp_pagenavi2(); ?>
+    <?php } else { ?>      
+    <div class="navigation"><p><?php posts_nav_link('&harr;','&lt; Previous Posts','Older Posts &gt;'); ?></p></div>
+    <div style="float:left"></div>
+    <?php } ?> 
+	<!--FIM DA PAGENAVI-->    
 <?php else: //se não existirem posts, mostre a mensagem abaixo?>
 	<h2><?php _e('Ops...', 'sincomavi'); ?></h2>
 	<p><?php _e('Desculpe, nenhuma postagem encontrada.', 'sincomavi'); ?></p>

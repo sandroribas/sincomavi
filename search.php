@@ -5,7 +5,9 @@
 
 
 <div id="conteudo-busca">
-			
+            <div id="busca-top">
+                <img src="<?php bloginfo('template_directory');?>/img/slide1.jpg" alt="SINCOMAVI" />
+            </div><!--fim do topo-->
             
             <div id="titulo-pgbusca">
                 <div id="titulob">
@@ -37,9 +39,9 @@
 					</div><!--fim da busca-res-->
         		 <?php get_template_part('loop', 'busca');?>
                 </div>
-                <div class="right-busca">
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Anuncios Home') ) : ?>
-            <p><?php _e('Esta coluna é uma widget area. '); ?><?php _e('Adicione widgets nos '); ?><strong><?php _e('Anuncios Home'); ?></strong> <?php _e('para mais funcionalidades!'); ?></p>
+                <div class="right-busca"><!--Alterar por: Lateral Busca-->
+                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Lateral Busca') ) : ?>
+            <p><?php _e('Esta coluna é uma widget area. '); ?><?php _e('Adicione widgets na '); ?><strong><?php _e('Lateral Busca'); ?></strong> <?php _e('para mais funcionalidades!'); ?></p>
             <?php endif; ?>
                 </div>
     		</div><!--fim dos destaques-home-->

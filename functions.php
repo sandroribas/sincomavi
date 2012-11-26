@@ -103,7 +103,7 @@ add_filter('single_template', create_function('$t', 'foreach( (array) get_the_ca
 
 //---tamanho do excerpt
 function new_excerpt_length($length) {
-return 20;
+return 25;
 }
 add_filter('excerpt_length', 'new_excerpt_length');
 
@@ -297,6 +297,15 @@ add_action('manage_posts_custom_column', 'ST4_columns_content', 10, 2);
 		'before_title'=>'',
 		'after_title'=>'',));
 		
+		register_sidebar(array('name'=>'Lateral Busca',
+		'name' => __( 'Lateral Busca' ),
+		'id'=>'lateral-busca',
+		'description' => __( 'Inclua Widgets na Lateral Busca.' ),
+		'before_widget'=>'<div class="anuncios-busca">',
+		'after_widget'=>'</div>',
+		'before_title'=>'',
+		'after_title'=>'',));
+		
 		//as sidebars auxiliares ainda estão sem uso
 		register_sidebar(array('name'=>'Sidebar 1',
 		'name' => __( 'Sidebar 1' ),
@@ -405,44 +414,6 @@ function the_post_thumbnail_caption() {
   }
 }
 
-//PAGINAÇÃO
-function kriesi_pagination($pages = '', $range = 2)
-{  
-     $showitems = ($range * 2)+1;  
-
-     global $paged;
-     if(empty($paged)) $paged = 1;
-
-     if($pages == '')
-     {
-         global $wp_query;
-         $pages = $wp_query->max_num_pages;
-         if(!$pages)
-         {
-             $pages = 1;
-         }
-     }   
-
-     if(1 != $pages)
-     {
-         echo "<div class='pagination'>";
-         if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo;</a>";
-         if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a>";
-
-         for ($i=1; $i <= $pages; $i++)
-         {
-             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
-             {
-                 echo ($paged == $i)? "<span class='current'>".$i."</span>":"<a href='".get_pagenum_link($i)."' class='inactive' >".$i."</a>";
-             }
-         }
-
-         if ($paged < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($paged + 1)."'>&rsaquo;</a>";  
-         if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>&raquo;</a>";
-         echo "</div>\n";
-     }
-}
-
 //breadcrumb function
 function the_breadcrumb() {
 	if (!is_home()) {
@@ -466,4 +437,30 @@ function the_breadcrumb() {
 		
 	}
 }
+
+//---------------------------- [ Pagenavi Function ] ------------------------------//
+ 
+function wp_pagenavi2() {
+  global $wp_query, $wp_rewrite;
+  $pages = '';
+  $max = $wp_query->max_num_pages;
+  if (!$current = get_query_var('paged')) $current = 1;
+  $args['base'] = str_replace(999999999, '%#%', get_pagenum_link(999999999));
+  $args['total'] = $max;
+  $args['current'] = $current;
+ 
+  $total = 1;
+  $args['mid_size'] = 3;
+  $args['end_size'] = 1;
+  $args['prev_text'] = '';
+  $args['next_text'] = '';
+ 
+  if ($max > 1) echo '
+<div class="wp-pagenavi">';
+ if ($total == 1 && $max > 1) $pages = '<span class="pages">P&aacute;gina ' . $current . ' de ' . $max . '</span>';
+ echo $pages . paginate_links($args);
+ if ($max > 1) echo '</div>
+';
+}
+
 ?>
