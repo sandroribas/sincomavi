@@ -15,9 +15,9 @@
                 
                 <div class="rodape-col3">
 					<ul>
-					  <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/twitter-ico.png" alt="Siga-nos!" /></a></li>
-					  <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/fb-ico.png" alt="Curta a SINCOMAVI no Facebook!" /></a></li>
-					  <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/pin-ico.png" alt="Pin us!" /></a></li>
+					  <li><a href="https://twitter.com/@sincomavi" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/twitter-ico.png" alt="Siga-nos!" /></a></li>
+					  <li><a href="https://www.facebook.com/SINCOMAVI/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/fb-ico.png" alt="Curta a SINCOMAVI no Facebook!" /></a></li>
+					  <li><a href="http://pinterest.com/sincomavi/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/pin-ico.png" alt="Pin us!" /></a></li>
 					  <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/rss-ico.png" alt="Assine nossa RSS!" /></a></li>
 					</ul>
                 </div><!--rodape-cols fim-->

@@ -1,5 +1,5 @@
 <?php
-query_posts('post_type=parceiros&showposts=8');
+query_posts('category_name=convenios&showposts=8');
 if ( have_posts() ) : while ( have_posts() ) : the_post(); //resumindo, se existrem posts, mostre-os?>
 <div <?php post_class(); ?>>
 	<div class="imgParceiro">

@@ -1,28 +1,12 @@
-<?php
-/*
-Template Name: Serviços
-*/
-?>
 <?php get_header(); //chama o topo do site ?>
-<!--<div id="slider-topo">
-        <div class="slides_container">
-			<?php //get_template_part('loop', 'slider');?> 
-        </div>
-	</div>
-     </div>--><!--fim do slider-topo-->
-    
-     	
-     	
-     
-     
 </div><!--fim do topo-->
 
 
 <div id="conteudo">
 <div id="titulo-buscaS">
                 <div id="titulos">
-                <h1 class="titulo-serv"><?php _e('CONVÊNIOS','sincomavi')?></h1>
-                página
+                <h1 class="titulo-serv"><?php _e('CONVENIADOS','sincomavi')?></h1>
+                
             	</div><!--fim do tituloh-->
                 <?php get_search_form('minha_busca'); ?><!--fim da busca-->
             </div>
@@ -65,7 +49,7 @@ Template Name: Serviços
 			<div id="destaques-servicos">
                 <div id="destaques-servicosL">
                 	<h1 class="titulos">
-                    	<span class="linha-titulo"><?php _e('CURSOS E PALESTRAS','sincomavi')?></span>
+                    	<span class="linha-titulo"><a href="http://localhost/wp-estudos/Category/servicos/cursos/" title=""><?php _e('CURSOS E PALESTRAS','sincomavi')?></a></span>
                     </h1>
                
                     <?php get_template_part('loop', 'cursosDest');?>
@@ -96,12 +80,15 @@ Template Name: Serviços
 
     		<div id="conteudo-servicos">
 				<div id="parceiros">
-                	<?php get_template_part('loop', 'parceirosDest');?>
+                	<h1 class="titulos">
+                    	<span class="linha-titulo"><a href="http://localhost/wp-estudos/Category/servicos/convenios/" title=""><?php _e('CONVÊNIOS','sincomavi')?></a></span>
+                    </h1>
+                	<?php get_template_part('loop', 'conveniosDest');?>
                 </div><!--fim dos parceiros-->
 				
                 <div id="convenios">
-                	<h2 class="titulo-total2"><a href="http://localhost/wp-estudos/convenios/" title="Convenios"><?php _e('CLÍNICAS E MÉDICOS CONVENIADOS','sincomavi')?></a></h2>
-                    <?php get_template_part('loop', 'conveniosDest');?>
+                	<h2 class="titulo-total2"><a href="http://localhost/wp-estudos/Category/servicos/conveniados/" title="Convenios"><?php _e('CLÍNICAS E MÉDICOS CONVENIADOS','sincomavi')?></a></h2>
+                    <?php get_template_part('loop', 'conveniadosDest');?>
                 </div><!--fim dos convenios-->
                 
                 <div id="grupo_construir">

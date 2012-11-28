@@ -17,7 +17,7 @@
     		<div id="conteudo-single">
             	
         		
-                <?php get_template_part('loop', 'singleLegisla');?>
+                <?php get_template_part('loop', 'singleServ');?>
                 <div id="postsRelacionados">
                 <h1 class="titulo-single3"><a style="color: white" href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><span><?php _e('NOTÍCIAS RELACIONADAS','sincomavi');?></span></a></h1>
                                            <?php
@@ -40,9 +40,9 @@
 											?>
 											<div class="conteudoRelacionados">
 												<div class="fotoRelacionados"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'pequena' ); } ?></a></div>
-												<div class="tituloRelacionadosmar"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></div>
+												<div class="tituloRelacionadosmar2"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></div>
 												<div class="textoRelacionados"><?php echo the_excerpt(); ?></div>
-                                                <a class="bt-dest-mar" href="<?php the_permalink();?>" title="<?php the_title_attribute(); ?>"><?php _e('LEIA MAIS','sincomavi'); ?></a>
+                                                <a class="bt-dest-mar2" href="<?php the_permalink();?>" title="<?php the_title_attribute(); ?>"><?php _e('LEIA MAIS','sincomavi'); ?></a>
 											</div>
 											<?php
 											}

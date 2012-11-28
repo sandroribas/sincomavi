@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Sindicato
+Template Name: Conveniados
 */
 ?>
 <?php get_header(); //chama o topo do site ?>
@@ -21,7 +21,7 @@ Template Name: Sindicato
 <div id="conteudo">
     		<div id="conteudo-sindicato">
         		
-                <?php get_template_part('loop', 'sindicato');?>
+                <?php get_template_part('loop', 'conveniados');?>
                 
         	</div><!--fim do conteudo-sindicato-->
             
@@ -48,7 +48,7 @@ Template Name: Sindicato
                 </div><!--dim da DIRETORIA-->
                 
                 <div class="anuncio-revista">
-                	<a href="http://www.twobrasil.com/wordpress/cat/revistas/" target="_self" title=""><img src="<?php bloginfo('template_directory'); ?>/img/anuncio-revistas.jpg" alt="Veja todas edições." /></a>
+                	<a href="#" title=""><img src="<?php bloginfo('template_directory'); ?>/img/anuncio-revistas.jpg" alt="Veja todas edições." /></a>
                 </div>
             </div><!--fim da lateral-sindicato-->
             

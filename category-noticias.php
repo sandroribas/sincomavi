@@ -37,7 +37,7 @@
                         	<?php get_template_part('loop', 'noticiasCat');?>
                             
                             
-                                                <h1 class="titulo-serv223"><a style="color: white" href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><span><?php _e('NOTÍCIAS MAIS RECENTES','sincomavi');?></span></a></h1>
+                                                <h1 class="titulo-serv223"><a style="color: white" href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><span><?php _e('NOTÍCIAS RELACIONADAS','sincomavi');?></span></a></h1>
                                            <?php
 											$randomPost = $wpdb->get_var("SELECT guid FROM $wpdb->posts WHERE post_type = 'post' AND post_status = 'publish' ORDER BY rand() LIMIT 1");
 											$categories = get_the_category($post->ID);
