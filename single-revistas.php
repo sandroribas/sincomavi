@@ -15,7 +15,6 @@
 
 <div id="conteudo">
     		<div id="conteudo-revistas">
-            SINGLE
                 <?php get_template_part('loop', 'revistasSingle');?>
                 <div id="postsRelacionados">
                 <h1 class="titulo-single2"><a style="color: white" href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><span><?php _e('NOTÍCIAS RELACIONADAS','sincomavi');?></span></a></h1>

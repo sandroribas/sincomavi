@@ -5,7 +5,7 @@
         </div>
 	</div>
      </div>--><!--fim do slider-topo-->
-     <div id="titulo-busca">
+    
      	
      	
      
@@ -15,43 +15,42 @@
 
 <div id="conteudo">
     		<div id="conteudo-sindicato">
-        		<div id="titulopg">
-        			<h1 class="titulo-pg"><?php the_title();?></h1>
-                    <?php //query_posts('category_name=noticias&paged=$paged');
-if ( have_posts() ) : while ( have_posts() ) : the_post(); //resumindo, se existrem posts, mostre-os?>
-
-<div class="post-noticia-single">
-
-	 <h2 class="titulo-serv22"><a style="color: white" href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><span><?php the_title();?></span></a></h2>
-     <div class="data-noticias"><strong><?php the_time('d, M Y') ?></strong></div>
-	<div class="imagem-noticias"><?php the_post_thumbnail('post-thumbnails'); ?></div>
-    
-    <?php the_content(); ?> 
-    
-	
-    
-    
-</div><!--fim do post-->                  
-<?php endwhile;?> 
-	<div id="paginacao">
-    <?php wp_pagenavi(); ?>
-    	
-    </div>
-    
-<?php else: //se não existirem posts, mostre a mensagem abaixo?>
-	<h2><?php _e('Ops...', 'sincomavi'); ?></h2>
-	<p><?php _e('Desculpe, nenhuma postagem encontrada.', 'sincomavi'); ?></p>
-
-<?php endif; wp_reset_query();?>
-        		</div><!--fim do titulopg-->
+        		
+                <?php get_template_part('loop', 'sindicato');?>
+                
         	</div><!--fim do conteudo-sindicato-->
             
             <div id="lateral-sindicato1">
             	<?php get_search_form('minha_busca'); ?><!--fim da busca-->
+                <div id="diretoria">
+                     <div id="dir-div1">
+                     	 <?php query_posts('p=278'); ?>
+							<?php while (have_posts()) : the_post(); ?>
+							<h2><span><?php the_title(); ?></span></h2>
+							<?php the_content(); ?>
+							<?php endwhile;?>
+                        <a href="#" class="bt-mais"></a>
+                    </div><!--fim da dir-div1-->
+                    
+                    <div id="dir-div2">
+                        <?php query_posts('p=276'); ?>
+							<?php while (have_posts()) : the_post(); ?>
+							<h2><span><?php the_title(); ?></span></h2>
+							<?php the_content(); ?>
+							<?php endwhile;?>
+                         <a href="#" class="bt-menos"></a>
+                    </div><!--fim da div-dir2-->
+                </div><!--dim da DIRETORIA-->
+                
+                <div class="anuncio-revista">
+                	<a href="http://www.twobrasil.com/wordpress/cat/revistas/" target="_self" title=""><img src="<?php bloginfo('template_directory'); ?>/img/anuncio-revistas.jpg" alt="Veja todas edições." /></a>
+                </div>
             </div><!--fim da lateral-sindicato-->
             
             <div id="estrutura">
-            
+            	<div class="titulo1"><h1 class="titulo1-1"><?php _e('ESTRUTURA','sincomavi')?></h1></div>
+                <h2><span><?php _e('SINCOMAVI conta com alto grau de informatização','sincomavi')?></span></h2>
+            	<?php get_template_part('loop', 'sindicatoEstrutura');?>
             </div><!--fim da estrutura-->
 </div><!--fim do conteudo-->
 <?php get_footer(); //chama o rodape do site ?>

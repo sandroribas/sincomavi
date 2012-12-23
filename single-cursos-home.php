@@ -15,9 +15,11 @@
 
 <div id="conteudo">
     		<div id="conteudo-single">
-                <?php get_template_part('loop', 'singleSind');?>
+            	
+        		
+                <?php get_template_part('loop', 'singleCur-home');?>
                 <div id="postsRelacionados">
-                <h1 class="titulo-single13"><a style="color: white" href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><span><?php _e('NOTÍCIAS RELACIONADAS','sincomavi');?></span></a></h1>
+                <h1 id="pra-cima" class="titulo-single4"><a style="color: white" href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><span><?php _e('NOTÍCIAS RELACIONADAS','sincomavi');?></span></a></h1>
                                            <?php
 											$randomPost = $wpdb->get_var("SELECT guid FROM $wpdb->posts WHERE post_type = 'post' AND post_status = 'publish' ORDER BY rand() LIMIT 1");
 											$categories = get_the_category($post->ID);
@@ -38,9 +40,9 @@
 											?>
 											<div class="conteudoRelacionados">
 												<div class="fotoRelacionados"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'pequena' ); } ?></a></div>
-												<div class="tituloRelacionadosaz"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></div>
+												<div class="tituloRelacionadosmar2"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></div>
 												<div class="textoRelacionados"><?php echo the_excerpt(); ?></div>
-                                                <a class="bt-dest-azul2" href="<?php the_permalink();?>" title="<?php the_title_attribute(); ?>"><?php _e('LEIA MAIS','sincomavi'); ?></a>
+                                                <a class="bt-dest-mar2" href="<?php the_permalink();?>" title="<?php the_title_attribute(); ?>"><?php _e('LEIA MAIS','sincomavi'); ?></a>
 											</div>
 											<?php
 											}

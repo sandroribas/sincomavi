@@ -22,7 +22,7 @@ Template Name: Serviços
 <div id="titulo-buscaS">
                 <div id="titulos">
                 <h1 class="titulo-serv"><?php _e('CONVÊNIOS','sincomavi')?></h1>
-                página
+                
             	</div><!--fim do tituloh-->
                 <?php get_search_form('minha_busca'); ?><!--fim da busca-->
             </div>

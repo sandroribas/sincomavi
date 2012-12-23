@@ -79,16 +79,15 @@
     		</div><!--fim dos destaques-home-->
 
     		<div id="conteudo-servicos">
-				<div id="parceiros">
-                	<h1 class="titulos">
-                    	<span class="linha-titulo"><a href="http://localhost/wp-estudos/Category/servicos/convenios/" title=""><?php _e('CONVÊNIOS','sincomavi')?></a></span>
-                    </h1>
-                	<?php get_template_part('loop', 'conveniosDest');?>
-                </div><!--fim dos parceiros-->
+				
 				
                 <div id="convenios">
-                	<h2 class="titulo-total2"><a href="http://localhost/wp-estudos/Category/servicos/conveniados/" title="Convenios"><?php _e('CLÍNICAS E MÉDICOS CONVENIADOS','sincomavi')?></a></h2>
-                    <?php get_template_part('loop', 'conveniadosDest');?>
+                	
+                	<h1 id="tit" class="titulos">
+                    	<span class="linha-titulo"><a href="#" title=""><?php _e('CLÍNICAS E MÉDICOS CONVENIADOS','sincomavi')?></a></span>
+                    </h1>
+                    <?php get_template_part('loop', 'conveniados');?>
+                    
                 </div><!--fim dos convenios-->
                 
                 <div id="grupo_construir">

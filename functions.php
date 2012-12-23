@@ -288,6 +288,24 @@ add_action('manage_posts_custom_column', 'ST4_columns_content', 10, 2);
 		'before_title'=>'',
 		'after_title'=>'',));
 		
+		register_sidebar(array('name'=>'Lateral Convenios',
+		'name' => __( 'Lateral Convenios' ),
+		'id'=>'lateral-convenios',
+		'description' => __( 'Inclua Widgets na Lateral Convenios.' ),
+		'before_widget'=>'<div>',
+		'after_widget'=>'</div>',
+		'before_title'=>'',
+		'after_title'=>'',));
+		
+		register_sidebar(array('name'=>'Lateral Cursos',
+		'name' => __( 'Lateral Cursos' ),
+		'id'=>'lateral-cursos',
+		'description' => __( 'Inclua Widgets na Lateral Cursos.' ),
+		'before_widget'=>'<div>',
+		'after_widget'=>'</div>',
+		'before_title'=>'',
+		'after_title'=>'',));
+		
 		register_sidebar(array('name'=>'Lateral Legisla B',
 		'name' => __( 'Lateral Legisla B' ),
 		'id'=>'lateral-legislal-b',

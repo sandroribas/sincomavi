@@ -15,8 +15,7 @@
 
 <div id="conteudo">
     		<div id="conteudo-single">
-            	
-        		
+                    		
                 <?php get_template_part('loop', 'single');?>
                 <div id="postsRelacionados">
                 <h1 class="titulo-single1"><a style="color: white" href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><span><?php _e('POSTS RELACIONADOS','sincomavi');?></span></a></h1>

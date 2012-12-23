@@ -3,14 +3,22 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); //resumindo, se exist
 
 <div class="post-noticia">
 
-	 <h2 class="titulo-serv22"><a style="color: white" href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><span><?php the_title();?></span></a></h2>
-     <div class="data-noticias"><strong><?php the_time('d, M Y') ?></strong></div>
-	<div class="imagem-noticias"><?php the_post_thumbnail('post-thumbnails'); ?></div>
-    
+	 <h2 class="titulo-serv22"><a style="color: white" href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><span><?php the_title();?></span></a> <span class="dataspan">- <?php the_time('d, M Y') ?></span></h2>
+    <div class="data-noticias"><strong><?php //the_time('d, M Y') ?></strong></div>
+	<?php if(has_post_thumbnail()){ ?>
+    	<div class="imagem-noticias-left">
+			<?php the_post_thumbnail('post-thumbnails'); ?>
+        </div><!--fim da imagem-noticias-left-->
+	<?php } ?>
+    <div class="texto-noticias-right">
     <?php the_excerpt(); ?> 
-    <a class="bt-dest-amarelo" href="<?php the_permalink();?>" title="<?php the_title_attribute(); ?>"><?php _e('LEIA MAIS','sincomavi'); ?></a>    
+    <a class="bt-dest-amarelo" href="<?php the_permalink();?>" title="<?php the_title_attribute(); ?>"><?php _e('LEIA MAIS','sincomavi'); ?></a> 
     
-</div><!--fim do post-->                  
+    </div> 
+    <div class="clear"></div>  
+    
+</div><!--fim do post-->
+
 <?php endwhile;?> 
 	<!--PAGENAVI-->
     <?php //posts_nav_link('&harr;','&lt; Previous Posts','Older Posts &gt;'); ?>

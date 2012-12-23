@@ -1,18 +1,22 @@
 <?php
-if ( have_posts() ) : while ( have_posts() ) : the_post(); //resumindo, se existrem posts, mostre-os?>
-<div class="conveniado-cat">
-	<?php the_post_thumbnail('post-thumbnails'); ?>
-    <h1><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><span><?php the_title();?></span></a></h1>
-    <div class="clear"></div>
-    <?php the_content(); ?> 
-    <a class="bt-dest-marrom2" href="<?php echo $linkBtn;?>" title="<?php echo $nomeBnt; ?>"><?php echo $nomeBtn; ?></a>
-    <!--<a class="bt-noticias-home" href="<?php //the_permalink(); ?>" title="<?php //the_title_attribute(); ?>"><?php //the_title(); ?></a>-->
-</div><!--fim do post-->
 
+if ( have_posts() ) : while ( have_posts() ) : the_post(); //resumindo, se existrem posts, mostre-os?>
+<div class="post-convenios-cat">
+	<div class="img-convenios-cat">
+		<?php the_post_thumbnail('post-thumbnails'); ?>
+    </div><!--fim da img-convenios-cat-->
+    
+    <h1 class="titulo-convenios-cat"><span><?php the_title();?></span></h1>
+  
+    <div class="texto-convenios-cat">
+		<?php the_content(); ?> 
+    </div><!--fim do texto-convenios-cat-->
+    
+    <!--<a class="bt-dest-marrom2" href="<?php //the_permalink(); ?>" title="Veja mais"><?php //_e('VEJA MAIS','sincomavi'); ?></a>-->
+    
+</div><!--fim do convenios-cat-->                   
 <?php endwhile;?> 
 	<!--PAGENAVI-->
-
-    <div class="clear"></div>
     <?php //posts_nav_link('&harr;','&lt; Previous Posts','Older Posts &gt;'); ?>
 	<?php //if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
     <?php if(function_exists('wp_pagenavi2')) { ?>

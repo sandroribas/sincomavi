@@ -48,13 +48,15 @@
 			<div id="conteudo-cursos">
                 
                 	<h1 class="titulos">
-                    	<span class="linha-titulo"><a href="http://localhost/wp-estudos/Category/servicos/cursos/" title=""><?php _e('CURSOS REALIZADOS','sincomavi')?></a></span>
+                    	<span class="linha-titulo"><a href="#" title=""><?php _e('CURSOS REALIZADOS','sincomavi')?></a></span>
                     </h1>
                		<div class="left">
                     	<?php get_template_part('loop', 'cursosCat');?>
                 	</div>
             		<div class="right">
-                    	<span class="linha-titulo"><a href="http://localhost/wp-estudos/Category/servicos/cursos/" title=""><?php _e('TESTE','sincomavi')?></a></span>
+                    	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Lateral Cursos') ) : ?>
+            			<p><?php _e('Esta coluna é uma widget area. '); ?><?php _e('Adicione widgets na '); ?><strong><?php _e('Lateral Cursos'); ?></strong> <?php _e('para mais funcionalidades!'); ?></p>
+            			<?php endif; ?>
                     </div>
                 
     		</div><!--fim dos conteudo-cursos-->

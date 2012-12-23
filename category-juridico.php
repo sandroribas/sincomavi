@@ -1,8 +1,3 @@
-<?php
-/*
-Template Name: Jurídco
-*/
-?>
 <?php get_header(); //chama o topo do site ?>
 <!--<div id="slider-topo">
         <div class="slides_container">
